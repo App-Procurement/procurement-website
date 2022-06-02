@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import styled from 'styled-components'
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
@@ -7,509 +7,311 @@ import Layout from '../components/Layout';
 import '../css/home.css';
 import remark from 'remark';
 import remarkHTML from 'remark-html';
+import { AiFillCloseCircle } from 'react-icons/ai';
 import Carousel from 'nuka-carousel';
 import Migration from '../pages/migration'
+import ScenarioSlider from '../components/ScenarioXformation/ScenarioSlider';
+import SelectScenario from '../components/ScenarioXformation/SelectScenario';
+import Microsoft from '../img/scenario/homepage/microsoft.png';
+import procurement from '../img/scenario/homepage/procurement.png';
+import warehouse from '../img/scenario/homepage/warehouse.jpg';
+import workflow from '../img/scenario/homepage/workflow.svg';
+import cycle from '../img/scenario/homepage/procurement.svg';
+import analysis from '../img/scenario/homepage/analysis.svg';
+import telephone from '../img/scenario/homepage/telephone.svg';
+import logo from '../img/scenario/homepage/logo.png';
+import Login from '../components/Forms/Login';
+import Register from '../components/Forms/Register';
 // import Migration from '../components/Migration'
+import {
+  TiSocialFacebook,
+  TiSocialTwitter,
+  TiSocialLinkedin,
+  TiSocialYoutube,
+} from 'react-icons/ti';
 
-const TextContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  color:  white;
-  position: relative;
-  span::before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 2px;
-    position: absolute;
-    top: 0px;
-    background-color: white;
-  }
-`;
+
 const toHTML = (value) =>
   remark().use(remarkHTML).processSync(value).toString();
 
-export class IndexPageTemplate extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      numberOfSlides: 2,
-      currentSlide: 0,
-      totalSlides: 0,
-      partnersToShow: 4,
-      autoPlayPartners: false,
-      totalPartners: 0,
-    };
+export const IndexPageTemplate = ({scenarios, slider }) => {
+  // const [showSelectModule, setShowSelectModule] = useState(false);
+  const [showSelectScenario, setShowSelectScenario] = useState(false);
+  const [showUseCase, setShowUseCase] = useState(false);
+  const [useCase, setUseCase] = useState(null);
+  const [showForm, setShowForm] = useState(false);
+  const [showReg, setShowReg] = useState(false);
+
+  // function onClickSelectSModule() {
+  //   setShowSelectModule(true);
+  // }
+
+  // function onClickSelectModuleClose() {
+  //   setShowSelectModule(false);
+  // }
+
+  function onClickSelectScenario() {
+    setShowSelectScenario(true);
   }
 
-  componentDidMount() {
-    window.addEventListener('resize', this.updateNumberOfSlides);
-    setTimeout(() => {
-      this.updateNumberOfSlides();
-    }, 500);
-    if (this.props.successstories) {
-      this.setState({
-        totalSlides: this.props.successstories.length,
-      });
-    }
-    if (this.props.partners) {
-      this.setState({
-        autoPlayPartners: this.props.partners.length > 4,
-      });
-    }
+  function onClickSelectScenarioClose() {
+    setShowSelectScenario(false);
   }
 
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.updateNumberOfSlides);
+  function onClickUseCase(uc) {
+    if (uc.useCaseSlider) {
+      setUseCase(uc);
+      setShowUseCase(true);
+    }
+  }
+  function onClickUseCaseClose() {
+    setShowUseCase(false);
   }
 
-  updateNumberOfSlides = () => {
-    let numberOfSlides = 1;
-    let partnersToShow = 2;
-    let autoPlay = true;
-    if (window.innerWidth <= 470) {
-      partnersToShow = 1;
-    } else if (window.innerWidth > 470 && window.innerWidth <= 700) {
-      partnersToShow = 2;
-    } else if (window.innerWidth > 700 && window.innerWidth <= 900) {
-      partnersToShow = 3;
-      numberOfSlides = 2;
-    } else {
-      partnersToShow = 4;
-      numberOfSlides = 2;
-    }
-    this.setState({
-      numberOfSlides,
-      partnersToShow,
-      autoPlayPartners: this.props.partners.length > partnersToShow,
-    });
-  };
-
-  updateCurrentSlide = (factor) => {
-    const { currentSlide, totalSlides, numberOfSlides } = this.state;
-    if (
-      currentSlide + factor >= 0 &&
-      currentSlide + factor <= totalSlides - numberOfSlides
-    ) {
-      console.log(currentSlide + factor);
-      this.setState({
-        currentSlide: currentSlide + factor,
-      });
-    }
-  };
-
-  afterSlide = (currentSlide) => {
-    this.setState({
-      currentSlide,
-    });
-  };
-
-  render() {
-    const {
-      bannercontent,
-      usecases,
-      solutions,
-      goals,
-      partners,
-      successstories,
-    } = this.props;
-    const {
-      numberOfSlides,
-      currentSlide,
-      totalSlides,
-      partnersToShow,
-      autoPlayPartners,
-    } = this.state;
-    return (
-      <div className='home-container'>
-        <div className='d-flex w-100 flex-wrap align-items-center justify-content-between pl py-lg-4 dark-background banner-container'>
-          <div className='d-inline-block banner-left'>
-            <div className='d-block py-5 banner-content'>
-              <h2>{bannercontent.title}</h2>
-              <div className='text-justify'
-                dangerouslySetInnerHTML={{ __html: toHTML(bannercontent.text) }}
+  return (
+    <section id='scenario-bg'>
+      <div
+        className={`scenario-slider-container ${
+          // showSelectModule === true ? 'select-scenario' : '',
+          showSelectScenario === true ? 'select-scenario' : ''
+        } ${showUseCase === true ? 'select-usecase' : ''}`}>
+        {/* <ScenarioHome /> */}
+        {/* homePage Starts here*/}
+        <div className='homePage-grid'>
+          {/* Header Start */}
+          <div className='header'>
+            <div className='logo'>
+              <img src={logo} alt='' />
+            </div>
+            <div className='search-box'>
+              <input
+                type='search'
+                name=''
+                id='search-home'
+                placeholder='Search Here...'
               />
-              <div className='d-flex banner-btns'>
-                <a href='#' className='btn for-free'>
-                  Try Synectiks For Free
-                </a>
-                <a href='#' className='btn watch-demo'>
-                  Watch Demo
-                </a>
-              </div>
+            </div>
+            <div className='group-btn'>
+              <a className='login' href='/login'>
+                Login
+              </a>
+              <a className='register' href='/register'>
+                Register
+              </a>
             </div>
           </div>
-          <div className='d-inline-block text-center banner-right'>
-            <div className='d-block pt-lg-4 pb-lg-0 pb-3 banner-services'>
-              {/* <div className='row'>
-                {bannercontent.service &&
-                  bannercontent.service.map((service) => (
-                    <div key={v4()} className='col-md-6 col-sm-6 col-12'>
-                      <div className='d-block w-100 text-center service'>
-                        <div className='d-inline-block rounded-circle image'>
-                          <div className='d-flex align-items-center justify-content-center w-100 h-100'>
-                            <a href={service.link}>
-                              <img
-                                className='auto-height-img'
-                                src={service.img}
-                              />
-                            </a>
-                          </div>
-                        </div>
-                        <div
-                          className='d-inline-block text'
-                          dangerouslySetInnerHTML={{
-                            __html: toHTML(service.name),
-                          }}
-                        />
-                      </div>
-                    </div>
-                  ))}
-              </div> */}
+          {/* Header End */}
+          {/* <Register /> */}
+          {showForm ? (
+            <div className='form-close-btn'>
+              <button onClick={() => setShowForm(false)}>
+                <AiFillCloseCircle />
+              </button>
+              <Login />
+            </div>
+          ) : null}
 
-              {/* <div className='number-section'>
-                <div className='count-section mb-3'>
-                 <span></span>
-                <div>
-                <h5>Single Control Plane to manage all</h5>
-                <p>Xformation addresses the operational and security challenges of managing:</p>
-                <div id='ulContainer'>
-                <ul>
-                  <li>Multiple Clouds/Products/Environments/Cloud Native Services</li>
-                  <li>
-                  Multiple Kubernetes clusters across any infrastructure.
-                  </li>
-                </ul>
-                </div>
-                  </div>
-                </div>
+          {showReg ? (
+            <div className='reg-close-btn'>
+              <button onClick={() => setShowReg(false)}>
+                <AiFillCloseCircle />
+              </button>
+              <Register />
+            </div>
+          ) : null}
 
-                <div className='count-section'>
-                  <span></span>
-                <div>
-                <h5>DevSecOps ToolChain</h5>
-                <p>It provides DevSecOps teams with integrated tools for running containerized/serverless workloads.</p>
+          <div className='banner-stack'>
+            {/* banner Start */}
+            <div className='banner'>
+              <div className='banner-text'>
+                {/* <h4>Get comprehensive control and visibility</h4> */}
+                <p>
+                  XFORMATION SIMPLIFIED PROCUREMENT PROCESS WITH IMPROVED USER EXPERIENCE!
+                </p>
+                <h6>
+                  Transform your end-to-end procurement operations, personalized
+                  approvals, budget controls, and real-time information with our
+                  intuitive and easy-to-use solution.
+                </h6>
+                <div className='banner-btns'>
+                  <button className='login'>CONTACT US</button>
+                  {/* Scenario Button Starts*/}
+                  <div
+                    className={`scenario-select-container ${
+                      showSelectScenario === true ? 'active' : ''
+                    } ${showUseCase === true ? 'active-usecase' : ''}`}>
+                    {/* <button className='select' onClick={onClickSelectSModule}> */}
+                    <button className='select' onClick={onClickSelectScenario}>
+                      {/* SELECT MODULE */}
+                      SELECT SCENARIO
+                    </button>
+                    <SelectScenario
+                      scenarios={scenarios}
+                      onClickUseCase={onClickUseCase}
+                      onClickCloseScenario={onClickSelectScenarioClose}
+                    />
+                  </div>
+                  {/* Scenario Button Ends*/}
                 </div>
               </div>
-            </div> */}
-            <div className='pl-3'>
-              <img src='https://res.cloudinary.com/papu/image/upload/v1630071336/hybrid-cloud/whyus/MicrosoftTeams-image_10_vbl04p.png'/>
-            </div>
-            </div>
-          </div>
-        </div>
-        <Migration/>
+              <div className='banner-img'>
+                <img src={Microsoft} alt='' />
+              </div>
+              <div className='banner-icons-stack'>
+                <div className='article'>
+                  <div className='icon'>
+                    <img src={cycle} alt='' className='hover-animation' />
+                  </div>
 
-        <div className='d-block py-5 background platform-container'>
-          <h2 className='d-block text-center pb-5'>{usecases.heading}</h2>
-          <div className='d-block px-md-5 px-3 pb-5 mb-lg-5'>
-            <div className='row align-items-center justify-content-center'>
-              <div className='col-lg-5 col-12'>
-                <div className='d-block px-lg-5 mb-lg-0 mb-5 text-center platform-content'>
-                  <div className='d-block mb-4 image-box'>
-                    <div className='image'>
-                      <img
-                        className='auto-height-img'
-                        src={usecases.cioimage}
-                        alt=''
-                      />
-                    </div>
-                  </div>
-                  <div className='d-block platform-button'>
-                    <button className='btn'>For CIO / CTO</button>
-                    <i className='fa fa-angle-double-right'></i>
+                  <div className='icon-text-group'>
+                    <h6>Simplified Procurement Cycle</h6>
+                    <p>
+                      Lorem ipsum dolor sit amet, cons bh dolor, malesuada etili
+                      adipDon nec malesuada etgutet…
+                    </p>
                   </div>
                 </div>
-              </div>
-              <div className='col-lg-7 col-12'>
-                <div className='d-block platform-services'>
-                  <div className='row'>
-                    {usecases.ciousecases &&
-                      usecases.ciousecases.map((usecase) => (
-                        <div key={v4()} className='col-md-6 col-sm-6 col-12'>
-                          <div className='d-block text-center service'>
-                            <div className='d-inline-block rounded-circle image'>
-                              <div className='d-flex w-100 h-100 align-items-center justify-content-center'>
-                                <img
-                                  className='auto-height-img'
-                                  src={usecase.img}
-                                  alt=''
-                                />
-                              </div>
-                            </div>
-                            <div className='d-block name'>{usecase.name}</div>
-                          </div>
-                        </div>
-                      ))}
+                <div className='article'>
+                  <div className='icon'>
+                    <img className='hover-animation' src={workflow} alt='' />
+                  </div>
+                  <div className='icon-text-group'>
+                    <h6>Purchasing Workflows</h6>
+                    <p>
+                      Lorem ipsum dolor sit amet, cons bh dolor, malesuada etili
+                      adipDon nec malesuada etgutet…
+                    </p>
+                  </div>
+                </div>
+                <div className='article'>
+                  <div className='icon'>
+                    <img className='hover-animation' src={analysis} alt='' />
+                  </div>
+                  <div className='icon-text-group'>
+                    <h6>Supplier Analysis</h6>
+                    <p>
+                      Lorem ipsum dolor sit amet, cons bh dolor, malesuada etili
+                      adipDon nec malesuada etgutet…
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className='d-block px-md-5 px-3'>
-            <div className='row align-items-center justify-content-center'>
-              <div className='col-lg-7 col-12 order-lg-first order-last'>
-                <div className='d-block platform-services'>
-                  <div className='row'>
-                    {usecases.teamusecases &&
-                      usecases.teamusecases.map((usecase) => (
-                        <div key={v4()} className='col-md-6 col-sm-6 col-12'>
-                          <div className='d-block text-center service'>
-                            <div className='d-inline-block rounded-circle image'>
-                              <div className='d-flex w-100 h-100 align-items-center justify-content-center'>
-                                <img
-                                  className='auto-height-img'
-                                  src={usecase.img}
-                                  alt=''
-                                />
-                              </div>
-                            </div>
-                            <div className='d-block name'>{usecase.name}</div>
-                          </div>
-                        </div>
-                      ))}
+            {/* banner End */}
+            {/* banner bottom Start*/}
+            <div className='main-section'>
+              {/* banner bottom End*/}
+              {/* Procurement Start */}
+
+              <div className='procurement'>
+                <h2>End to End Procurement Process</h2>
+                <img src={procurement} alt='' />
+              </div>
+              {/* Procurement End */}
+              <div className='warehouse'>
+                <div className='warehouse-left'>
+                  <img src={warehouse} alt='' />
+                </div>
+                <div className='warehouse-right'>
+                  <h6 className='we-are'>WHO WE ARE</h6>
+                  <h5>We give solution for your business and technology</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, cons bh dolor, malesuada etili
+                    adipDon nec malesu Lorem ipsum dolor sit amet, cons bh
+                    dolor, malesuada etgutet. Lorem ipsum dolor sit amet, cons
+                    bh dolor, malesuada etili adipDon nec malesu orem ipsum
+                    dolor sit amet, cons bh dolor, malesuada etgutet…
+                  </p>
+
+                  <div className='we-company'>
+                    <div className='first-row'>
+                      <span className='fh'>WE</span>
+                      <span className='fp'>
+                        are starter company with of creative mind to solve your
+                        business and IT problems
+                      </span>
+                    </div>
+                    <div className='second-row'>
+                      <a className='border-black'>LEARN MORE</a>
+                      <a className='register'>CONTACT US</a>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className='col-lg-5 col-12'>
-                <div className='d-block px-lg-5 mb-lg-0 mb-5 text-center platform-content'>
-                  <div className='d-block mb-4 image-box'>
-                    <div className='image'>
-                      <img
-                        className='auto-height-img'
-                        src={usecases.teamimage}
-                        alt=''
-                      />
-                    </div>
-                  </div>
-                  <div className='d-block platform-button'>
-                    <i className='fa fa-angle-double-left'></i>
-                    <button className='btn'>For DevSecOps TEAM</button>
-                  </div>
+              <div className='footer-top'>
+                <h4>
+                  Connect with us to simplify <br />
+                  your your procurement process
+                </h4>
+                <a className='footer-contact'>Contact Us</a>
+                <div className='telephone'>
+                  <img src={telephone} alt='' />
+                  +00(00) 1234567
                 </div>
+              </div>
+              <div className='footer-bottom'>
+                <div className='social-icons group-btn'>
+                  <div className='logo'>
+                    <img src={logo} alt='' />
+                  </div>
+                  <ul className='social'>
+                    <li>
+                      <TiSocialFacebook className='icon-size' />
+                    </li>
+                    <li>
+                      <TiSocialTwitter className='icon-size' />
+                    </li>
+                    <li>
+                      <TiSocialLinkedin className='icon-size' />
+                    </li>
+                    <li>
+                      <TiSocialYoutube className='icon-size-U' />
+                    </li>
+                  </ul>
+                </div>
+                <p>Copyright © 2021 Synectiks Inc</p>
               </div>
             </div>
           </div>
         </div>
-        <div className='d-block py-5 dark-background solutions-container'>
-          <h2 className='d-block text-center py-5'>Technology Approach</h2>
-          <div className='d-block px-md-5 px-3'>
-            <div className='row'>
-              {solutions &&
-                solutions.map((solution) => (
-                  <div className='col-md-4 col-12' key={v4()}>
-                    <div className='d-block bg-white p-4 rounded h-md-100 solution-box'>
-                      <div className='d-block text-center icon-img'>
-                        <img src={solution.img} alt='' />
-                      </div>
-                      <div className='d-block text-center name'>
-                        {solution.name}
-                      </div>
-                      <div
-                        className='d-block text-center sub-heading'
-                        dangerouslySetInnerHTML={{
-                          __html: toHTML(solution.description),
-                        }}
-                      />
-                      <div className='d-block solutions-service'>
-                        <ul>
-                          {solution.checklist &&
-                            solution.checklist.map((check) => (
-                              <li key={v4()}>
-                                <i className='fa fa-check'></i>
-                                <span>{check.check}</span>
-                              </li>
-                            ))}
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-            </div>
-          </div>
-          <h2 className='d-block text-center py-5'>Xformation primary goals</h2>
-          <div className='d-block px-md-5 px-3 primary-goals'>
-            <div className='row align-items-center justify-content-center'>
-              <div className='col-lg-6 col-12'>
-                <div className='d-block content'>
-                  <h3>{goals.heading}</h3>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: toHTML(goals.description),
-                    }}
-                  />
-                </div>
-              </div>
-              <div className='col-lg-6 col-12'>
-                <div className='d-block primary-goals-services'>
-                  <div className='row align-items-center justify-content-center'>
-                    {goals.goalslist &&
-                      goals.goalslist.map((goal) => (
-                        <div key={v4()} className='col-md-6 col-sm-6 col-12'>
-                          <div className='d-block text-center service'>
-                            <div className='d-inline-block rounded-circle image'>
-                              <div className='d-flex w-100 h-100 align-items-center justify-content-center'>
-                                <img
-                                  className='auto-height-img'
-                                  src={goal.img}
-                                  alt=''
-                                />
-                              </div>
-                            </div>
-                            <div className='d-block name'>{goal.name}</div>
-                          </div>
-                        </div>
-                      ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className='d-block py-5 background partners-container'>
-          <h2 className='d-block text-center pb-5 pt-4'>Our Partners</h2>
-          <div className='d-block mx-md-5 mx-3 mb-5 text-center partners'>
-            <div className='row align-items-center justify-content-center'>
-              <Carousel
-                wrapAround={true}
-                autoplayInterval={1000}
-                autoplay={autoPlayPartners}
-                slidesToShow={partnersToShow}
-                withoutControls={true}>
-                {partners &&
-                  partners.map((partner) => (
-                    <div
-                      key={v4()}
-                      className='d-block text-center partners-logo'>
-                      <img src={partner.img} alt='' />
-                    </div>
-                  ))}
-              </Carousel>
-            </div>
-          </div>
-          <div className='d-block mx-md-5 mx-3 py-md-5 partners-slider'>
-            <div className='row align-items-center justify-content-center'>
-              <div className='col-lg-3 col-12'>
-                <div className='d-block mb-3 success-heading'>
-                  Success Stories
-                </div>
-                <div className='d-block mb-3 success-link'>
-                  <a href='#'>View All Success Stories &#62;</a>
-                </div>
-                <div className='d-block mb-3 indicators'>
-                  <span>01</span>
-                  <span className='line'>
-                    <span
-                      style={{
-                        width: `${
-                          ((currentSlide + numberOfSlides) * 100) / totalSlides
-                        }%`,
-                      }}></span>
-                  </span>
-                  <span>
-                    {totalSlides > 9 ? totalSlides : '0' + totalSlides}
-                  </span>
-                </div>
-                <div className='d-block text-center mb-5 mb-lg-0 success-button'>
-                  <button
-                    onClick={() => this.updateCurrentSlide(1)}
-                    className={`control-prev ${
-                      currentSlide === totalSlides - numberOfSlides
-                        ? 'disabled'
-                        : ''
-                    }`}
-                    type='button'>
-                    <i className='fa fa-arrow-circle-right'></i>
-                  </button>
-                  <button
-                    onClick={() => this.updateCurrentSlide(-1)}
-                    className={`control-next ${
-                      currentSlide === 0 ? 'disabled' : ''
-                    }`}
-                    type='button'>
-                    <i className='fa fa-arrow-circle-left'></i>
-                  </button>
-                </div>
-              </div>
-              <div className='col-lg-9 col-12'>
-                <div className='item'>
-                  <div className='row'>
-                    <Carousel
-                      afterSlide={this.afterSlide}
-                      slideIndex={currentSlide}
-                      withoutControls={true}
-                      scrollMode='remainder'
-                      slidesToShow={numberOfSlides}
-                      slidesToScroll={1}>
-                      {successstories &&
-                        successstories.map((story) => (
-                          <div className='col-12' key={v4()}>
-                            <div className='card'>
-                              <img src={story.img} alt='' />
-                              <div className='d-block px-3 py-4 caption'>
-                                <div className='heading'>
-                                  <h5>{story.heading}</h5>
-                                </div>
-                                <div className='description'>
-                                  <p>{story.description}</p>
-                                </div>
-                                <a
-                                  target='_blank'
-                                  href={story.link}
-                                  className='btn'>
-                                  Read More{' '}
-                                  <i className='fa fa-long-arrow-alt-right'></i>
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        ))}
-                    </Carousel>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='d-block mx-md-5 mx-3 py-5'>
-            <div className='d-block mx-lg-5'>
-              <div className='d-flex align-items-center justify-content-center px-md-5 px-3 py-3 application-box'>
-                <h3>Modernize Your Infra & Application</h3>
-                <a href='#' className='btn touch-btn'>
-                  Get In Touch!
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+        {/* homePage Ends here*/}
+        {/* <ScenarioSlider slider={slider} showMoreDetailsButton={true} /> */}
       </div>
-    );
-  }
-}
+      {showUseCase && (
+        <div
+          className={`scenario-slider-container ${
+            showUseCase === true ? 'select-usecase' : ''
+          }`}>
+          <button
+            className='close-btn'
+            onClick={() => {
+              onClickUseCaseClose(useCase);
+            }}>
+            <AiFillCloseCircle />
+          </button>
+          <ScenarioSlider
+            slider={useCase.useCaseSlider}
+            showMoreDetailsButton={false}
+            onClickUseCaseClose={onClickUseCaseClose}
+          />
+        </div>
+      )}
+    </section>
+  );
+};
 
 IndexPageTemplate.propTypes = {
-  bannercontent: PropTypes.object,
-  usecases: PropTypes.object,
-  solutions: PropTypes.object,
-  partners: PropTypes.object,
-  goals: PropTypes.object,
-  successstories: PropTypes.object,
+  scenarios: PropTypes.array,
+  slider: PropTypes.array,
 };
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
-
   return (
-    <Layout>
       <IndexPageTemplate
-        bannercontent={frontmatter.bannercontent}
-        usecases={frontmatter.usecases}
-        solutions={frontmatter.solutions}
-        goals={frontmatter.goals}
-        partners={frontmatter.partners}
-        successstories={frontmatter.successstories}
+         scenarios={frontmatter.scenarios}
+         slider={frontmatter.slider}
       />
-    </Layout>
   );
 };
 
@@ -524,57 +326,35 @@ IndexPage.propTypes = {
 export default IndexPage;
 
 export const pageQuery = graphql`
-  query IndexPageTemplate {
-    markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
-      frontmatter {
-        bannercontent {
-          title
-          text
-          service {
-            link
-            img
-            name
-          }
-        }
-        usecases {
-          heading
-          cioimage
-          teamimage
-          ciousecases {
-            img
-            name
-          }
-          teamusecases {
-            img
-            name
-          }
-        }
-        solutions {
+query IndexPage($id: String!) {
+  markdownRemark(id: { eq: $id }) {
+    frontmatter {
+      scenarios {
+        img
+        name
+        subItems {
           img
           name
-          description
-          checklist {
-            check
-          }
-        }
-        goals {
-          heading
-          description
-          goalslist {
+          useCaseSlider {
             img
             name
           }
         }
-        partners {
-          img
-        }
-        successstories {
-          img
-          heading
-          description
-          link
+      }
+
+      slider {
+        img
+        name
+        text
+        moreDetails {
+          moreDetailsName
+          moreDetailsText
+          moreDetailsImage {
+            img
+          }
         }
       }
     }
   }
+}
 `;

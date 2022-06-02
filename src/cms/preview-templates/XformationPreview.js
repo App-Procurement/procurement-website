@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { XformationPageTemplate } from '../../templates/xformation-post'
+import Layout from './Layout';
 
 const XformationPagePreview = ({ entry }) => {
   const entrySlider = entry.getIn(['data', 'slider'])
@@ -9,13 +10,19 @@ const XformationPagePreview = ({ entry }) => {
   const scenarios = entryScenarios ? entryScenarios.toJS() : []
   const entryModules = entry.getIn(['data', 'modules']);
   const modules = entryModules ? entryModules.toJS() : []
-  return (
-    <XformationPageTemplate
-      slider={slider}
-      scenarios={scenarios}
-      modules={modules}
-    />
-  )
+  if(data){
+    return (
+      <Layout>
+        <XformationPageTemplate
+          slider={slider}
+          scenarios={scenarios}
+          modules={modules}
+        />
+      </Layout>
+    )
+  }else {
+    return <div>Loading...</div>
+  }
 }
 
 XformationPagePreview.propTypes = {

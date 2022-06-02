@@ -1,114 +1,497 @@
 ---
-templateKey: index-page
-title: Synectiks services
-bannercontent:
-  title: Synectiks XFORMATION is the Open Migration & Management Software Stack
-  text: Simplify and accelerate the cloud native adoption in multi cloud hybrid
-    environment. A single DevSecOps platform for visibility, security and
-    development velocity. Manage all your Apps and Infra everywhere.
-  service:
-    - img: https://res.cloudinary.com/papu/image/upload/v1620231221/new-design/home-page/Icons/Migration_and_Modernization_eiymro.svg
-      name: Migration & Modernisation @ 50% Time & Efforts
-      link: https://determined-dijkstra-95a0e8.netlify.app/migration/
-    - img: https://res.cloudinary.com/papu/image/upload/v1620231218/new-design/home-page/Icons/cloud_Native_Transformation_csek27.svg
-      name: Cloud Native Transformation Appcentric Optimization
-      link: https://determined-dijkstra-95a0e8.netlify.app/migration/
-    - img: https://res.cloudinary.com/papu/image/upload/v1620231221/new-design/home-page/Icons/DevSecOps_Transformation_sjyqtp.svg
-      name: DecSecOps Transformation Simplicity & Velocity
-      link: https://determined-dijkstra-95a0e8.netlify.app/migration/
-    - img: https://res.cloudinary.com/papu/image/upload/v1620231217/new-design/home-page/Icons/Business_Insights_zkslhd.svg
-      name: Business Insights Higher Data Revenue @ lower Cost
-      link: https://determined-dijkstra-95a0e8.netlify.app/migration/
-usecases:
-  heading: One Platform Many Usecases
-  cioimage: https://res.cloudinary.com/papu/image/upload/v1624456105/new-design/home-page/Images/MicrosoftTeams-image_1_fefz50.png
-  teamimage: https://res.cloudinary.com/papu/image/upload/v1624456116/new-design/home-page/Images/MicrosoftTeams-image_b65iob.png
-  ciousecases:
-    - img: https://res.cloudinary.com/papu/image/upload/v1620231223/new-design/home-page/Icons/Migration_and_Modernization_1_o92pia.svg
-      name: Migration & Modernisation
-    - img: https://res.cloudinary.com/papu/image/upload/v1620231218/new-design/home-page/Icons/Build_Vs_Buy_qy0l7o.svg
-      name: Build Vs Buy
-    - img: https://res.cloudinary.com/papu/image/upload/v1620231218/new-design/home-page/Icons/Data_Revenue_mi4hkn.svg
-      name: Data Revenue
-    - img: https://res.cloudinary.com/papu/image/upload/v1620231221/new-design/home-page/Icons/DevSecOps_a1bybr.svg
-      name: DevSecOps Transformation
-  teamusecases:
-    - img: https://res.cloudinary.com/papu/image/upload/v1620231220/new-design/home-page/Icons/Development_velocity_r8xbpp.svg
-      name: Development Velocity
-    - img: https://res.cloudinary.com/papu/image/upload/v1620231225/new-design/home-page/Icons/Security_and_Compliance_ifdi30.svg
-      name: Security & Compliance
-    - img: https://res.cloudinary.com/papu/image/upload/v1620231224/new-design/home-page/Icons/Operation_Automation_xygvi6.svg
-      name: Operation Automation
-    - img: https://res.cloudinary.com/papu/image/upload/v1620231225/new-design/home-page/Icons/multi_cloud_hybrid_adoption_kdp8br.svg
-      name: Multi-Cloud Hybird Adaption
-solutions:
-  - img: https://res.cloudinary.com/papu/image/upload/v1620231214/new-design/home-page/Icons/aggregate_a6ibku.svg
-    name: AGGREGATE
-    description: Hardware Agnostic Infrastructure
-    checklist:
-      - check: Software Defined Infrastructure
-      - check: Multicloud Hybrid Provisioning Templates
-      - check: Resource Pooling Across Clouds
-      - check: Container / Serverless Ecosystem
-  - img: https://res.cloudinary.com/papu/image/upload/v1620231223/new-design/home-page/Icons/Extend_ycekl5.svg
-    name: EXTEND
-    description: Blueprint Based Development
-    checklist:
-      - check: Reusable Application Blocks
-      - check: Prebuilt ISV Solutions
-      - check: Prebuilt CI /CD Blueprints
-  - img: https://res.cloudinary.com/papu/image/upload/v1620231214/new-design/home-page/Icons/Automate_dx69kv.svg
-    name: AUTOMATE
-    description: Operation Automations
-    checklist:
-      - check: Realtime Monitoring
-      - check: Infrastructure Validation
-      - check: Audit and Compliance
-      - check: Cost Optimization
-goals:
-  heading: Xformation is a platform that provides peace of mind, governance,
-    efficiency and control of multi-cloud environments.
-  description: Xformation helps you to migrate and modernize your legacy business,
-    take advantage of cloud and microservice architecture and thereby accelerate
-    your transformation journey @50% time & cost.
-  goalslist:
-    - img: https://res.cloudinary.com/papu/image/upload/v1620231214/new-design/home-page/Icons/Accelerated_Cloud_Adoption_gcbt8w.svg
-      name: Accelerated Cloud Adoption
-    - img: https://res.cloudinary.com/papu/image/upload/v1620231224/new-design/home-page/Icons/Multi_cloud_Container_Orchestration_hvmaz4.svg
-      name: Multi-Cloud Container Orchestration
-    - img: https://res.cloudinary.com/papu/image/upload/v1620231214/new-design/home-page/Icons/App_Centric_optimization_jliiac.svg
-      name: App-Centric Optimization
-    - img: https://res.cloudinary.com/papu/image/upload/v1620231220/new-design/home-page/Icons/Continious_Delivery_compliance_Automation_poxyww.svg
-      name: Continuous Delivery Complaince Automation
-partners:
-  - img: https://res.cloudinary.com/papu/image/upload/v1620307696/new-design/home-page/Images/azure-logo_wea8nr.png
-  - img: https://res.cloudinary.com/papu/image/upload/v1620307696/new-design/home-page/Images/google-cloud-logo_xcxemr.png
-  - img: https://res.cloudinary.com/papu/image/upload/v1620307696/new-design/home-page/Images/aws-logo_sjv1o1.png
-  - img: https://res.cloudinary.com/papu/image/upload/v1620307696/new-design/home-page/Images/acronis-logo_ndhzls.png
-successstories:
-  - img: https://res.cloudinary.com/papu/image/upload/v1620305230/new-design/home-page/Images/CS_SoftwareDefinedTransformation-03250f0e4ba38735d6e41abaa9d0fb54_s6lngd.jpg
-    heading: Software Defined Transformation
-    description: AWS Cloud migration for a large motor industry.
-    link: https://www.synectiks.com/software-defined/index.html
-  - img: https://res.cloudinary.com/papu/image/upload/v1620305229/new-design/home-page/Images/CS_Realtime_Monitoring-a62dd5ec305368a459643e196697ffb4_iii8hi.jpg
-    heading: Realtime Monitoring
-    description: Highly Scalable extremely customizable realtime monitoring platform.
-    link: https://www.synectiks.com/realtime/index.html
-  - img: https://res.cloudinary.com/papu/image/upload/v1620305230/new-design/home-page/Images/CS_Software_Migration-709c30afb47703d839efb79aeae490da_aqdslm.jpg
-    heading: Storage Migration
-    description: Petabytes of storage migration for a large financial company with
-      zero down time.
-    link: https://www.synectiks.com/storage-migration/index.html
-  - img: https://res.cloudinary.com/papu/image/upload/v1620305230/new-design/home-page/Images/CS_NetworkDesign-6707341964238c8c2a188a6be01b676a_qla9mk.jpg
-    heading: Network Design
-    description: Complete network Backbone design with highest security for retail.
-    link: https://www.synectiks.com/network-design/index.html
-  - img: https://res.cloudinary.com/papu/image/upload/v1620305230/new-design/home-page/Images/CS_StorageTier-103b26051fde75aa4b9b9d5a8a303058_z5sl7u.jpg
-    heading: Storage Tier
-    description: Moving Bigdata workloads to aggregated platform for a large telco.
-    link: https://www.synectiks.com/storage-tier/index.html
-  - img: https://res.cloudinary.com/papu/image/upload/v1620305229/new-design/home-page/Images/CS_DisasterRecovery-f0018cb2716204dce78323c6d403060b_z5fw5g.jpg
-    heading: Disaster Recovery
-    description: Lightweight disaster recovery platform for indian Defense.
-    link: https://www.synectiks.com/disaster-recovery/index.html
+templateKey: scenario-post
+title: Procurement Demo
+scenarios:
+  - img: https://res.cloudinary.com/papu/image/upload/v1618827131/icrisat/1PSDSAdmin/PSDS_Admin_h2rcrg.svg
+    name: Procurement Admin
+    subItems:
+      - img: https://res.cloudinary.com/papu/image/upload/v1653606815/procurement-website/procurement-admin/Dashboard/Admin_Dashboard_tdwtag.png
+        name: Procurement Dashboard
+        useCaseSlider:
+          - img: https://res.cloudinary.com/papu/image/upload/v1653606815/procurement-website/procurement-admin/Dashboard/Admin_Dashboard_tdwtag.png
+            name: Procurement Admin Dashboard
+            text: "We sell green and roasted coffee beans that are sourced directly from
+              independent farmers and farm cooperatives. We’re proud to offer a
+              variety of coffee beans grown with great care for the environment
+              and local communities. "
+      - img: https://res.cloudinary.com/papu/image/upload/v1653607201/procurement-website/procurement-admin/chatroom/Chat_Room_jaamma.png
+        name: Chatroom
+        useCaseSlider:
+          - img: https://res.cloudinary.com/papu/image/upload/v1653607201/procurement-website/procurement-admin/chatroom/Create_ChatRoom_epcpdn.png
+            name: Create chat room
+            text: Create chat room
+          - img: https://res.cloudinary.com/papu/image/upload/v1653607201/procurement-website/procurement-admin/chatroom/Chat_Room_jaamma.png
+            name: Chat room
+            text: chatroom
+      - img: https://res.cloudinary.com/papu/image/upload/v1653607184/procurement-website/procurement-admin/purchase-requisition/View_Purchase_Requisitions_uiknnd.png
+        name: Purchase Requisition
+        useCaseSlider:
+          - img: https://res.cloudinary.com/papu/image/upload/v1653607184/procurement-website/procurement-admin/purchase-requisition/Purchase_Requisitions_dodqw4.png
+            name: Purchase Requisition
+            text: Purchase Requisition
+          - img: https://res.cloudinary.com/papu/image/upload/v1653607184/procurement-website/procurement-admin/purchase-requisition/View_Purchase_Requisitions_uiknnd.png
+            name: view purchase requisition
+            text: view purchase requisition
+      - img: https://res.cloudinary.com/papu/image/upload/v1653607163/procurement-website/procurement-admin/request-for-purpose/Create_New_Request_01_lntth3.png
+        name: Request For Purpose
+        useCaseSlider:
+          - img: https://res.cloudinary.com/papu/image/upload/v1653607163/procurement-website/procurement-admin/request-for-purpose/Create_New_Request_01_lntth3.png
+            name: Create New Request
+            text: Create New Request
+          - img: https://res.cloudinary.com/papu/image/upload/v1653607163/procurement-website/procurement-admin/request-for-purpose/New_Request_q2jrpp.png
+            name: New Request
+            text: New Request
+          - img: https://res.cloudinary.com/papu/image/upload/v1653607163/procurement-website/procurement-admin/request-for-purpose/View_Request_z8ykbc.png
+            name: View  Request
+            text: View  Request
+          - img: https://res.cloudinary.com/papu/image/upload/v1653607163/procurement-website/procurement-admin/request-for-purpose/catalogs_r1hp5j.png
+            name: Catalogue
+            text: Catalogue
+      - img: https://res.cloudinary.com/papu/image/upload/v1653607127/procurement-website/procurement-admin/calendar/Calendar_a7o89c.png
+        name: Calendar
+        useCaseSlider:
+          - img: https://res.cloudinary.com/papu/image/upload/v1653607127/procurement-website/procurement-admin/calendar/Calendar_a7o89c.png
+            name: Calendar
+            text: Calendar
+          - img: https://res.cloudinary.com/papu/image/upload/v1653607127/procurement-website/procurement-admin/calendar/Weekly_Calendar_jbrw6x.png
+            name: Weekly Calendar
+            text: Weekly Calendar
+          - img: https://res.cloudinary.com/papu/image/upload/v1653607127/procurement-website/procurement-admin/calendar/monthly_Calendar_sc6soy.png
+            name: Monthly Calendar
+            text: Monthly Calendar
+          - img: https://res.cloudinary.com/papu/image/upload/v1653607127/procurement-website/procurement-admin/calendar/Yearly_Calendar_b8wn5y.png
+            name: Yearly Calendar
+            text: Yearly Calendar
+          - img: https://res.cloudinary.com/papu/image/upload/v1653607127/procurement-website/procurement-admin/calendar/Event_Calendar_jqxjtr.png
+            name: Event Calendar
+            text: Event Calendar
+      - img: https://res.cloudinary.com/papu/image/upload/v1653607099/procurement-website/procurement-admin/invoice/Create_Invoice_pjsqmu.png
+        name: Invoice
+        useCaseSlider:
+          - img: https://res.cloudinary.com/papu/image/upload/v1653607099/procurement-website/procurement-admin/invoice/Create_Invoice_pjsqmu.png
+            name: Create Invoice
+            text: Create Invoice
+          - img: https://res.cloudinary.com/papu/image/upload/v1653607099/procurement-website/procurement-admin/invoice/Invoice_tjeabr.png
+            name: Invoice
+            text: Invoice
+          - img: https://res.cloudinary.com/papu/image/upload/v1653607099/procurement-website/procurement-admin/invoice/Add_po_sika8m.png
+            name: Add Purchase Order
+            text: Add Purchase Order
+      - img: https://res.cloudinary.com/papu/image/upload/v1653607073/procurement-website/procurement-admin/manage-supplier/Active_Products_sd7myn.png
+        name: Manage Supplier
+        useCaseSlider:
+          - img: https://res.cloudinary.com/papu/image/upload/v1653607072/procurement-website/procurement-admin/manage-supplier/Import_Product_le31uk.png
+            name: Import Product
+            text: Import Product
+          - img: https://res.cloudinary.com/papu/image/upload/v1653607072/procurement-website/procurement-admin/manage-supplier/Update_product_vloevv.png
+            name: Update Product
+            text: Update Product
+          - img: https://res.cloudinary.com/papu/image/upload/v1653607073/procurement-website/procurement-admin/manage-supplier/Add_Product_k2howl.png
+            name: Add Product
+            text: Add Product
+          - img: https://res.cloudinary.com/papu/image/upload/v1653607073/procurement-website/procurement-admin/manage-supplier/Active_Products_sd7myn.png
+            name: Active Products
+            text: Active Products
+          - img: https://res.cloudinary.com/papu/image/upload/v1653607073/procurement-website/procurement-admin/manage-supplier/Import_Supplier_jnuiwj.png
+            name: Import Supplier
+            text: Import Supplier
+          - img: https://res.cloudinary.com/papu/image/upload/v1653607072/procurement-website/procurement-admin/manage-supplier/Import_Supplier-1_xk4pra.png
+            name: Update Supplier
+            text: Update Supplier
+          - img: https://res.cloudinary.com/papu/image/upload/v1653607072/procurement-website/procurement-admin/manage-supplier/Add_Supplier_jpnnef.png
+            name: Add Supplier
+            text: Add Supplier
+          - img: https://res.cloudinary.com/papu/image/upload/v1653607072/procurement-website/procurement-admin/manage-supplier/Added_Supplier_hm2jet.png
+            name: Added Supplier
+            text: Added Supplier
+          - img: https://res.cloudinary.com/papu/image/upload/v1653607073/procurement-website/procurement-admin/manage-supplier/Active_Supplier_scz4nt.png
+            name: Active Supplier
+            text: Active Supplier
+          - img: https://res.cloudinary.com/papu/image/upload/v1653607072/procurement-website/procurement-admin/manage-supplier/Supplier_cqkevg.png
+            name: Supplier
+            text: Supplier
+      - img: https://res.cloudinary.com/papu/image/upload/v1653607039/procurement-website/procurement-admin/purchase-order/Purchase_Order_annpkh.png
+        name: Purchase Order
+        useCaseSlider:
+          - img: https://res.cloudinary.com/papu/image/upload/v1653607039/procurement-website/procurement-admin/purchase-order/Purchase_Order_annpkh.png
+            name: Purchase Order
+            text: Purchase Order
+          - img: https://res.cloudinary.com/papu/image/upload/v1653607040/procurement-website/procurement-admin/purchase-order/Veiw_Purchase_Order_ooy3b3.png
+            name: View Purchase Order
+            text: View Purchase Order
+          - img: https://res.cloudinary.com/papu/image/upload/v1653607040/procurement-website/procurement-admin/purchase-order/View_Purchase_Requisitions_bvoph9.png
+            name: View Purchase Requisition
+            text: View Purchase Requisition
+  - img: https://res.cloudinary.com/papu/image/upload/v1618828004/icrisat/2General-Director/Director_General_cbam6k.svg
+    name: Approver
+    subItems:
+      - img: https://res.cloudinary.com/papu/image/upload/v1618826865/icrisat/2General-Director/1Director-Portal/1Director_Dashboard_dahlna.jpg
+        name: Portal
+        useCaseSlider:
+          - img: https://res.cloudinary.com/papu/image/upload/v1618826865/icrisat/2General-Director/1Director-Portal/1Director_Dashboard_dahlna.jpg
+            name: Director Dashboard
+            text: "We sell green and roasted coffee beans that are sourced directly from
+              independent farmers and farm cooperatives. We’re proud to offer a
+              variety of coffee beans grown with great care for the environment
+              and local communities. "
+          - img: https://res.cloudinary.com/papu/image/upload/v1618826864/icrisat/2General-Director/1Director-Portal/2EmailPage_kzl806.jpg
+            name: Email Page
+            text: ndependent farmers and farm cooperatives. We’re proud to offer a variety
+              of coffee beans grown with great care for the environment and
+              local communities. Check our post or contact us directly for
+              current availability.
+          - img: https://res.cloudinary.com/papu/image/upload/v1618826864/icrisat/2General-Director/1Director-Portal/3ComposeEmail_idqf9p.jpg
+            name: Compose Email
+            text: We sell green and roasted coffee beans that are sourced directly from
+              independent farmers and farm cooperatives. We’re proud to offer a
+              variety of coffee beans grown with great care for the environment
+              and local communities. Check our post or contact us directly for
+              current availability.
+          - img: https://res.cloudinary.com/papu/image/upload/v1618826864/icrisat/2General-Director/1Director-Portal/4EmailPreviewPage_vlxxj3.jpg
+            name: Email Preview
+            text: We sell green and roasted coffee beans that are sourced directly from
+              independent farmers and farm cooperatives. We’re proud to offer a
+              variety of coffee beans grown with great care for the environment
+              and local communities. Check
+          - img: https://res.cloudinary.com/papu/image/upload/v1618826865/icrisat/2General-Director/1Director-Portal/5Reports_cenp3q.jpg
+            name: Reports
+            text: We sell green and roasted coffee beans that are sourced directly from
+              independent farmers and farm cooperatives. We’re proud to offer a
+              variety of coffee beans grown with great care for the environment
+              and local communities. Ch
+          - img: https://res.cloudinary.com/papu/image/upload/v1618826865/icrisat/2General-Director/1Director-Portal/6Kanban_quuxav.jpg
+            name: Kanban
+            text: We sell green and roasted coffee beans that are sourced directly from
+              independent farmers and farm cooperatives. We’re proud to offer a
+              variety of coffee beans grown with great care for the environment
+              and local communities. Chec
+          - img: https://res.cloudinary.com/papu/image/upload/v1618826865/icrisat/2General-Director/1Director-Portal/7RFP_izt22w.jpg
+            name: RFP
+            text: "We sell green and roasted coffee beans that are sourced directly from
+              independent farmers and farm cooperatives. We’re proud to offer a
+              variety of coffee beans grown with great care for the environment
+              and local communities. "
+          - img: https://res.cloudinary.com/papu/image/upload/v1618826865/icrisat/2General-Director/1Director-Portal/8_send_RFP_iouuwx.jpg
+            name: Send RFP
+            text: We sell green and roasted coffee beans that are sourced directly from
+              independent farmers and farm cooperatives. We’re proud to offer a
+              variety of coffee beans grown with great care for the environment
+              and local communities. Chec
+          - img: https://res.cloudinary.com/papu/image/upload/v1618826865/icrisat/2General-Director/1Director-Portal/9Approve_P_O_wjqxga.jpg
+            text: We sell green and roasted coffee beans that are sourced directly from
+              independent farmers and farm cooperatives. We’re proud to offer a
+              variety of coffee beans grown with great care for the environment
+              and local communities. Check our post or contact us directly for
+              current availability.
+            name: Approve PO
+          - img: https://res.cloudinary.com/papu/image/upload/v1618826864/icrisat/2General-Director/1Director-Portal/10Approve_P.O_Detail_olzgyx.jpg
+            name: Approve PO Detail
+            text: We sell green and roasted coffee beans that are sourced directly from
+              independent farmers and farm cooperatives. We’re proud to offer a
+              variety of coffee beans grown with great care for the environment
+              and local communities. Check our post or contact us directly for
+              current availability.
+          - img: https://res.cloudinary.com/papu/image/upload/v1618826862/icrisat/2General-Director/1Director-Portal/11Setup_Committe_paja9y.jpg
+            name: Setup Committee
+            text: We sell green and roasted coffee beans that are sourced directly from
+              independent farmers and farm cooperatives. We’re proud to offer a
+              variety of coffee beans grown with great care for the environment
+              and local communities. Check our post or contact us directly for
+              current availability.
+          - img: https://res.cloudinary.com/papu/image/upload/v1618826863/icrisat/2General-Director/1Director-Portal/12Members_Portal_wirn4v.jpg
+            name: Members Portal
+            text: We sell green and roasted coffee beans that are sourced directly from
+              independent farmers and farm cooperatives. We’re proud to offer a
+              variety of coffee beans grown with great care for the environment
+              and local communities. Check our post or contact us directly for
+              current availability.
+          - img: https://res.cloudinary.com/papu/image/upload/v1618826863/icrisat/2General-Director/1Director-Portal/13Invite_Committee_Members_t1impy.jpg
+            name: "Invite Committee Member "
+            text: We sell green and roasted coffee beans that are sourced directly from
+              independent farmers and farm cooperatives. We’re proud to offer a
+              variety of coffee beans grown with great care for the environment
+              and local communities. C
+          - img: https://res.cloudinary.com/papu/image/upload/v1618826862/icrisat/2General-Director/1Director-Portal/14InvoiceDetail_dshn2b.jpg
+            name: Invoice Detail
+            text: We sell green and roasted coffee beans that are sourced directly from
+              independent farmers and farm cooperatives. We’re proud to offer a
+              variety of coffee beans grown with great care for the environment
+              and local communities. Check our post or contact us directly for
+              current availability
+          - img: https://res.cloudinary.com/papu/image/upload/v1618826863/icrisat/2General-Director/1Director-Portal/15AddNewInvoice_rwzvyd.jpg
+            name: Add New Invoice
+            text: We sell green and roasted coffee beans that are sourced directly from
+              independent farmers and farm cooperatives. We’re proud to offer a
+              variety of coffee beans grown with great care for the environment
+              and local communit
+          - img: https://res.cloudinary.com/papu/image/upload/v1618826863/icrisat/2General-Director/1Director-Portal/16ContactPage_rfsz9y.jpg
+            name: Contact Page
+            text: We sell green and roasted coffee beans that are sourced directly from
+              independent farmers and farm cooperatives. We’re proud to offer a
+              variety of coffee beans grown with great care for the environment
+              and local communities. Check our post or contact us directly for
+              current availability.
+          - img: https://res.cloudinary.com/papu/image/upload/v1618826864/icrisat/2General-Director/1Director-Portal/17NewContactForm_gqlozt.jpg
+            name: New Contact Form
+            text: We sell green and roasted coffee beans that are sourced directly from
+              independent farmers and farm cooperatives. We’re proud to offer a
+              variety of coffee beans grown with great care for the environment
+              and local communities. Check our post or contact us directly for
+              current availability.
+      - img: https://res.cloudinary.com/papu/image/upload/v1618826865/icrisat/2General-Director/1Director-Portal/7RFP_izt22w.jpg
+        name: Request For Proposal
+        useCaseSlider:
+          - img: https://res.cloudinary.com/papu/image/upload/v1618826865/icrisat/2General-Director/1Director-Portal/7RFP_izt22w.jpg
+            name: Request For Proposal
+            text: We sell green and roasted coffee beans that are sourced directly from
+              independent farmers and farm cooperatives. We’re proud to offer a
+              variety of coffee beans grown with great care for the environment
+              and local communities. Check our post or contact us directly for
+              current availability.
+          - img: https://res.cloudinary.com/papu/image/upload/v1618826865/icrisat/2General-Director/1Director-Portal/8_send_RFP_iouuwx.jpg
+            text: We sell green and roasted coffee beans that are sourced directly from
+              independent farmers and farm cooperatives. We’re proud to offer a
+              variety of coffee beans grown with great care for the environment
+              and local communities. Check our post or contact us directly for
+              current availability.
+            name: Send Request For Proposal
+      - img: https://res.cloudinary.com/papu/image/upload/v1618826865/icrisat/2General-Director/1Director-Portal/9Approve_P_O_wjqxga.jpg
+        name: Purchase Order
+        useCaseSlider:
+          - img: https://res.cloudinary.com/papu/image/upload/v1618826865/icrisat/2General-Director/1Director-Portal/9Approve_P_O_wjqxga.jpg
+            name: Approve Purchase Order
+            text: We sell green and roasted coffee beans that are sourced directly from
+              independent farmers and farm cooperatives. We’re proud to offer a
+              variety of coffee beans grown with great care for the environment
+              and local communities. Check our post or contact us directly for
+              current availability.
+          - img: https://res.cloudinary.com/papu/image/upload/v1618826864/icrisat/2General-Director/1Director-Portal/10Approve_P.O_Detail_olzgyx.jpg
+            name: Approve PO Detail
+            text: We sell green and roasted coffee beans that are sourced directly from
+              independent farmers and farm cooperatives. We’re proud to offer a
+              variety of coffee beans grown with great care for the environment
+              and local communities. Check our post or contact us directly for
+              current availability.
+  - img: https://res.cloudinary.com/papu/image/upload/v1618830793/icrisat/3Buyer/Buyer_eotxzx.svg
+    name: Requestor
+    subItems:
+      - img: https://res.cloudinary.com/papu/image/upload/v1653611066/procurement-website/requestor/chatroom/requestor_dashboard-6_mz4fwb.png
+        name: Dashboard
+        useCaseSlider:
+          - img: https://res.cloudinary.com/papu/image/upload/v1653611066/procurement-website/requestor/chatroom/requestor_dashboard-6_mz4fwb.png
+            name: Dashboard
+            text: Dashboard
+      - img: https://res.cloudinary.com/papu/image/upload/v1653611022/procurement-website/requestor/request-for-purpose/requestor_dashboard-2_bjuodj.png
+        name: Request For Purpose
+        useCaseSlider:
+          - img: https://res.cloudinary.com/papu/image/upload/v1653611022/procurement-website/requestor/request-for-purpose/requestor_dashboard-2_bjuodj.png
+            name: Request  For Purpose
+            text: Request  For Purpose
+          - img: https://res.cloudinary.com/papu/image/upload/v1653611023/procurement-website/requestor/request-for-purpose/requestor_dashboard-3_ksceve.png
+            name: Requestor
+            text: Requestor
+          - img: https://res.cloudinary.com/papu/image/upload/v1653611023/procurement-website/requestor/request-for-purpose/requestor_dashboard-4_cyrfnm.png
+            name: Requestor
+            text: Requestor
+          - img: https://res.cloudinary.com/papu/image/upload/v1653611022/procurement-website/requestor/request-for-purpose/requestor_dashboard-5_tlx55e.png
+            name: "Requestor "
+            text: "Requestor "
+          - img: https://res.cloudinary.com/papu/image/upload/v1653611030/procurement-website/requestor/request-for-purpose/requestor_dashboard-7_x0axdi.png
+            name: Requestor
+            text: Requestor
+      - img: https://res.cloudinary.com/papu/image/upload/v1653611066/procurement-website/requestor/chatroom/requestor_dashboard-6_mz4fwb.png
+        name: Chat Room
+        useCaseSlider:
+          - img: https://res.cloudinary.com/papu/image/upload/v1653611066/procurement-website/requestor/chatroom/requestor_dashboard-6_mz4fwb.png
+            name: Chat Room
+            text: Chat Room
+  - img: https://res.cloudinary.com/papu/image/upload/v1618831033/icrisat/4Requestor/Requisitioner_gdqhmt.svg
+    name: Supplier
+    subItems:
+      - img: https://res.cloudinary.com/papu/image/upload/v1653823982/procurement-website/supplier/dashboard/1-SupplierDashboard_ervr6o.png
+        name: Dashboard
+        useCaseSlider:
+          - img: https://res.cloudinary.com/papu/image/upload/v1653823982/procurement-website/supplier/dashboard/1-SupplierDashboard_ervr6o.png
+            name: Dashboard
+            text: Dashboard
+          - img: https://res.cloudinary.com/papu/image/upload/v1653824006/procurement-website/supplier/dashboard/2-deliveryupdates_giloqb.png
+            name: Delivery Update
+            text: Delivery Update
+      - img: https://res.cloudinary.com/papu/image/upload/v1653832166/procurement-website/supplier/purchase-order/1-PurchaseOrder_nbza71.png
+        name: purchase Order
+        useCaseSlider:
+          - img: https://res.cloudinary.com/papu/image/upload/v1653832166/procurement-website/supplier/purchase-order/1-PurchaseOrder_nbza71.png
+            name: Purchase  Order
+            text: Purchase  Order
+          - img: https://res.cloudinary.com/papu/image/upload/v1653832166/procurement-website/supplier/purchase-order/2-ApprovedPurchase_Order_mqfycx.png
+            name: Approved Purchased Order
+            text: Approved Purchased Order
+          - img: https://res.cloudinary.com/papu/image/upload/v1653832166/procurement-website/supplier/purchase-order/3-PendingPurchase_Order_y947fx.png
+            name: Pending Purchase Order
+            text: Pending Purchase Order
+          - img: https://res.cloudinary.com/papu/image/upload/v1653832166/procurement-website/supplier/purchase-order/4-RejectPurchaseOrder_e10rrp.png
+            name: Reject Purchase Order
+            text: Reject Purchase Order
+          - img: https://res.cloudinary.com/papu/image/upload/v1653832166/procurement-website/supplier/purchase-order/5-ConfirmPurchaseOrder_ViewDetails_ysld8o.png
+            name: Confirm Purchase Order
+            text: Confirm Purchase Order
+          - img: https://res.cloudinary.com/papu/image/upload/v1653832166/procurement-website/supplier/purchase-order/6-Approved_pnylva.png
+            name: Approved
+            text: Approved
+          - img: https://res.cloudinary.com/papu/image/upload/v1653832167/procurement-website/supplier/purchase-order/7-RevisedPurchaseOrder_lwhfvg.png
+            name: Revised Purchased Order
+            text: Revised Purchased Order
+          - img: https://res.cloudinary.com/papu/image/upload/v1653832167/procurement-website/supplier/purchase-order/8-FullInvoice_nlnwg4.png
+            name: Full Invoice
+            text: Full Invoice
+          - img: https://res.cloudinary.com/papu/image/upload/v1653832167/procurement-website/supplier/purchase-order/9-VeiwPurchaseOrder_yqjtbc.png
+            name: View Purchased Order
+            text: View Purchased Order
+      - img: https://res.cloudinary.com/papu/image/upload/v1653834211/procurement-website/supplier/invoices/1-Invoices_s4ovd4.png
+        name: Invoice
+        useCaseSlider:
+          - img: https://res.cloudinary.com/papu/image/upload/v1653834211/procurement-website/supplier/invoices/1-Invoices_s4ovd4.png
+            name: Invoice
+            text: Invoice
+          - img: https://res.cloudinary.com/papu/image/upload/v1653834211/procurement-website/supplier/invoices/2-SettledInvoices_blfo2x.png
+            name: Settled Invoice
+            text: Settled Invoice
+          - img: https://res.cloudinary.com/papu/image/upload/v1653834211/procurement-website/supplier/invoices/3-UnclearInvoices_gb39te.png
+            name: Unclear Invoices
+            text: Unclear Invoices
+          - img: https://res.cloudinary.com/papu/image/upload/v1653834211/procurement-website/supplier/invoices/4-PartialInvoices_a6pcal.png
+            name: Partial Invoice
+            text: Partial Invoice
+          - img: https://res.cloudinary.com/papu/image/upload/v1653834211/procurement-website/supplier/invoices/5-Settled_nmknn1.png
+            name: Settled
+            text: Settled
+          - img: https://res.cloudinary.com/papu/image/upload/v1653834211/procurement-website/supplier/invoices/6-Unclear_p4zoah.png
+            name: Unclear
+            text: Unclear
+          - img: https://res.cloudinary.com/papu/image/upload/v1653834211/procurement-website/supplier/invoices/7-PartialInvoice_thpxvo.png
+            name: Partial Invoice
+            text: Partial Invoice
+      - img: https://res.cloudinary.com/papu/image/upload/v1653835325/procurement-website/supplier/catalogue/1-Catalog_ibhu1b.png
+        name: Catalogue
+        useCaseSlider:
+          - img: https://res.cloudinary.com/papu/image/upload/v1653835325/procurement-website/supplier/catalogue/1-Catalog_ibhu1b.png
+            name: Catalogue
+            text: Catalogue
+          - img: https://res.cloudinary.com/papu/image/upload/v1653835325/procurement-website/supplier/catalogue/2-CatalogI_T_qkqq6n.png
+            name: Catalogue
+            text: Catalogue
+          - img: https://res.cloudinary.com/papu/image/upload/v1653835326/procurement-website/supplier/catalogue/3-CatalogSubscription_otjcxz.png
+            name: Catalogue Subscription
+            text: Catalogue Subscription
+          - img: https://res.cloudinary.com/papu/image/upload/v1653835326/procurement-website/supplier/catalogue/4-CatalogStatioary_sa3zse.png
+            name: Catalogue Stationary
+            text: Catalogue Stationary
+          - img: https://res.cloudinary.com/papu/image/upload/v1653835326/procurement-website/supplier/catalogue/5-CatalogListing_rvfzkn.png
+            name: Catalogue Listing
+            text: Catalogue Listing
+          - img: https://res.cloudinary.com/papu/image/upload/v1653835326/procurement-website/supplier/catalogue/6-Edit-CatalogListing_jrk8ea.png
+            name: Edit Catalogue
+            text: Edit Catalogue
+          - img: https://res.cloudinary.com/papu/image/upload/v1653835325/procurement-website/supplier/catalogue/8-Preiview_Catalog_hn4pbt.png
+            name: Preview Catalogue
+            text: Preview Catalogue
+          - img: https://res.cloudinary.com/papu/image/upload/v1653835325/procurement-website/supplier/catalogue/9-View_Catalog_uc0arm.png
+            name: View Catalogue
+            text: View Catalogue
+          - img: https://res.cloudinary.com/papu/image/upload/v1653835325/procurement-website/supplier/catalogue/10-Import_Items_jbpsg4.png
+            name: Import Items
+            text: Import Items
+slider:
+  - img: https://res.cloudinary.com/papu/image/upload/v1618134269/6Bidding/4Bidder-Enrollemnet/Bidder_Enrollment_2_gk51fg.jpg
+    name: Slider 1
+    text: >
+      We sell green and roasted coffee beans that are sourced directly from
+      independent farmers and farm cooperatives. We’re proud to offer a variety
+      of coffee beans grown with great care for the environment and local
+      communities. Check our post or contact us directly for current
+      availability.
+    moreDetails:
+      moreDetailsName: Slider 1
+      moreDetailsImg:
+        - img: /img/products-grid1.jpg
+        - img: /img/products-grid2.jpg
+        - img: /img/products-grid3.jpg
+      moreDetailsText: >
+        We sell green and roasted coffee beans that are sourced directly from
+        independent farmers and farm cooperatives. We’re proud to offer a
+        variety of coffee beans grown with great care for the environment and
+        local communities. Check our post or contact us directly for current
+        availability.
+
+        We sell green and roasted coffee beans that are sourced directly from independent farmers and farm cooperatives. We’re proud to offer a variety of coffee beans grown with great care for the environment and local communities. Check our post or contact us directly for current availability.
+
+        We sell green and roasted coffee beans that are sourced directly from independent farmers and farm cooperatives. We’re proud to offer a variety of coffee beans grown with great care for the environment and local communities. Check our post or contact us directly for current availability.
+
+        We sell green and roasted coffee beans that are sourced directly from independent farmers and farm cooperatives. We’re proud to offer a variety of coffee beans grown with great care for the environment and local communities. Check our post or contact us directly for current availability.
+
+        We sell green and roasted coffee beans that are sourced directly from independent farmers and farm cooperatives. We’re proud to offer a variety of coffee beans grown with great care for the environment and local communities. Check our post or contact us directly for current availability.
+
+        We sell green and roasted coffee beans that are sourced directly from independent farmers and farm cooperatives. We’re proud to offer a variety of coffee beans grown with great care for the environment and local communities. Check our post or contact us directly for current availability.
+  - img: https://res.cloudinary.com/papu/image/upload/v1618134269/6Bidding/4Bidder-Enrollemnet/Bidder_Enrollment_2_gk51fg.jpg
+    name: Slider 2
+    text: >
+      We sell green and roasted coffee beans that are sourced directly from
+      independent farmers and farm cooperatives. We’re proud to offer a variety
+      of coffee beans grown with great care for the environment and local
+      communities. Check our post or contact us directly for current
+      availability.
+
+      We sell green and roasted coffee beans that are sourced directly from independent farmers and farm cooperatives. We’re proud to offer a variety of coffee beans grown with great care for the environment and local communities. Check our post or contact us directly for current availability.
+    moreDetails:
+      moreDetailsName: Slider 2
+      moreDetailsImg:
+        - img: /img/products-grid1.jpg
+        - img: /img/products-grid2.jpg
+        - img: /img/products-grid3.jpg
+      moreDetailsText: >
+        We sell green and roasted coffee beans that are sourced directly from
+        independent farmers and farm cooperatives. We’re proud to offer a
+        variety of coffee beans grown with great care for the environment and
+        local communities. Check our post or contact us directly for current
+        availability.
+
+        We sell green and roasted coffee beans that are sourced directly from independent farmers and farm cooperatives. We’re proud to offer a variety of coffee beans grown with great care for the environment and local communities. Check our post or contact us directly for current availability.
+
+        We sell green and roasted coffee beans that are sourced directly from independent farmers and farm cooperatives. We’re proud to offer a variety of coffee beans grown with great care for the environment and local communities. Check our post or contact us directly for current availability.
+
+        We sell green and roasted coffee beans that are sourced directly from independent farmers and farm cooperatives. We’re proud to offer a variety of coffee beans grown with great care for the environment and local communities. Check our post or contact us directly for current availability.
+
+        We sell green and roasted coffee beans that are sourced directly from independent farmers and farm cooperatives. We’re proud to offer a variety of coffee beans grown with great care for the environment and local communities. Check our post or contact us directly for current availability.
+
+        We sell green and roasted coffee beans that are sourced directly from independent farmers and farm cooperatives. We’re proud to offer a variety of coffee beans grown with great care for the environment and local communities. Check our post or contact us directly for current availability.
+  - img: /img/products-grid3.jpg
+    name: Slider 3
+    text: >
+      We sell green and roasted coffee beans that are sourced directly from
+      independent farmers and farm cooperatives. We’re proud to offer a variety
+      of coffee beans grown with great care for the environment and local
+      communities. Check our post or contact us directly for current
+      availability.
+    moreDetails:
+      moreDetailsName: Slider 3
+      moreDetailsImg:
+        - img: /img/products-grid1.jpg
+        - img: /img/products-grid2.jpg
+        - img: /img/products-grid3.jpg
+      moreDetailsText: >
+        We sell green and roasted coffee beans that are sourced directly from
+        independent farmers and farm cooperatives. We’re proud to offer a
+        variety of coffee beans grown with great care for the environment and
+        local communities. Check our post or contact us directly for current
+        availability.
+
+        We sell green and roasted coffee beans that are sourced directly from independent farmers and farm cooperatives. We’re proud to offer a variety of coffee beans grown with great care for the environment and local communities. Check our post or contact us directly for current availability.
+
+        We sell green and roasted coffee beans that are sourced directly from independent farmers and farm cooperatives. We’re proud to offer a variety of coffee beans grown with great care for the environment and local communities. Check our post or contact us directly for current availability.
+
+        We sell green and roasted coffee beans that are sourced directly from independent farmers and farm cooperatives. We’re proud to offer a variety of coffee beans grown with great care for the environment and local communities. Check our post or contact us directly for current availability.
+
+        We sell green and roasted coffee beans that are sourced directly from independent farmers and farm cooperatives. We’re proud to offer a variety of coffee beans grown with great care for the environment and local communities. Check our post or contact us directly for current availability.
+
+        We sell green and roasted coffee beans that are sourced directly from independent farmers and farm cooperatives. We’re proud to offer a variety of coffee beans grown with great care for the environment and local communities. Check our post or contact us directly for current availability.
 ---

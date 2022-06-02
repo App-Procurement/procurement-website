@@ -423,114 +423,80 @@ collections:
               default: "index-page",
             }
           - { label: Title, name: title, widget: string }
-          - {
-              label: "Banner Content",
-              name: "bannercontent",
-              widget: "object",
-              fields:
-                [
-                  { label: Banner Title, name: title, widget: text },
-                  { label: Banner Description, name: text, widget: markdown },
-                  {
-                    label: "Services",
-                    name: "service",
-                    widget: "list",
-                    fields:
-                      [
-                        { label: Link, name: link, widget: string },
-                        { label: Image, name: img, widget: string },
-                        { label: Description, name: name, widget: markdown },
-                      ],
-                  },
-                ],
-            }
-          - {
-              label: "Use cases",
-              name: "usecases",
-              widget: "object",
-              fields:
-                [
-                  { label: Heading, name: heading, widget: text },
-                  { label: CIO Image, name: cioimage, widget: text },
-                  { label: Team Image, name: teamimage, widget: text },
-                  {
-                    label: "CIO Use cases",
-                    name: "ciousecases",
-                    widget: "list",
-                    fields:
-                      [
-                        { label: Image, name: img, widget: text },
-                        { label: Description, name: name, widget: text },
-                      ],
-                  },
-                  {
-                    label: "Team Use cases",
-                    name: "teamusecases",
-                    widget: "list",
-                    fields:
-                      [
-                        { label: Image, name: img, widget: text },
-                        { label: Description, name: name, widget: text },
-                      ],
-                  },
-                ],
-            }
-          - {
-              label: "Solutions",
-              name: "solutions",
-              widget: "list",
-              fields:
-                [
-                  { label: Image, name: img, widget: text },
-                  { label: Heading, name: name, widget: text },
-                  { label: Description, name: description, widget: markdown },
-                  {
-                    label: "Checklist",
-                    name: "checklist",
-                    widget: "list",
-                    fields: [{ label: Check, name: check, widget: text }],
-                  },
-                ],
-            }
-          - {
-              label: "Primary Goals",
-              name: "goals",
-              widget: "object",
-              fields:
-                [
-                  { label: Heading, name: heading, widget: text },
-                  { label: Description, name: description, widget: markdown },
-                  {
-                    label: "Goals list",
-                    name: "goalslist",
-                    widget: "list",
-                    fields:
-                      [
-                        { label: Image, name: img, widget: text },
-                        { label: Description, name: name, widget: text },
-                      ],
-                  },
-                ],
-            }
-          - {
-              label: "Partners",
-              name: "partners",
-              widget: "list",
-              fields: [{ label: Image, name: img, widget: string }],
-            }
-          - {
-              label: "Success stories",
-              name: "successstories",
-              widget: "list",
-              fields:
-                [
-                  { label: Image, name: img, widget: string },
-                  { label: Heading, name: heading, widget: string },
-                  { label: Description, name: description, widget: string },
-                  { label: Link, name: link, widget: string },
-                ],
-            }
-      - file: "src/pages/survey/index.md"
+        - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "scenario-post",
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: Actors List,
+          name: scenarios,
+          widget: list,
+          fields:
+            [
+              { label: Image, name: img, widget: text },
+              { label: Name, name: name, widget: text },
+              {
+                label: Use Cases,
+                name: subItems,
+                widget: list,
+                fields:
+                  [
+                    { label: Image, name: img, widget: text },
+                    { label: Name, name: name, widget: text },
+                    {
+                      label: Use Case Slider,
+                      name: useCaseSlider,
+                      widget: list,
+                      fields:
+                        [
+                          { label: Image, name: img, widget: text },
+                          { label: Name, name: name, widget: text },
+                          { label: Text, name: text, widget: text },
+                        ],
+                    },
+                  ],
+              },
+            ],
+        }
+      - {
+          label: Slider,
+          name: slider,
+          widget: list,
+          fields:
+            [
+              { label: Image, name: img, widget: text },
+              { label: Name, name: name, widget: text },
+              { label: Text, name: text, widget: text },
+              {
+                label: More Details,
+                name: moreDetails,
+                widget: object,
+                fields:
+                  [
+                    {
+                      label: More Details Name,
+                      name: moreDetailsName,
+                      widget: text,
+                    },
+                    {
+                      label: More Details Text,
+                      name: moreDetailsText,
+                      widget: text,
+                    },
+                    {
+                      label: More Details Image,
+                      name: moreDetailsImage,
+                      widget: list,
+                      fields: [{ label: Image, name: img, widget: text }],
+                    },
+                  ],
+              },
+            ],
+        }
+     - file: "src/pages/survey/index.md"
         label: "Survey"
         name: "survey"
         fields:
