@@ -35,9 +35,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { IndexPagePreview } from '../../templates/xformation-post'
-import Layout from './Layout';
 
-const IndexPagePreview = ({ entry }) => {
+export default IndexPagePreview = ({ entry }) => {
   const data = entry.getIn(['data']).toJS()
   const entrySlider = entry.getIn(['data', 'slider'])
   const slider = entrySlider ? entrySlider.toJS() : []
@@ -65,4 +64,4 @@ IndexPagePreview.propTypes = {
   }),
 }
 
-export default XformationPagePreview
+// export default IndexPagePreview
