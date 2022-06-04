@@ -423,18 +423,18 @@ collections:
               default: "index-page",
             }
           - { label: Title, name: title, widget: string }
-        - {
-          label: "Template Key",
-          name: "templateKey",
-          widget: "hidden",
-          default: "scenario-post",
-        }
-      - { label: "Title", name: "title", widget: "string" }
-      - {
-          label: Actors List,
-          name: scenarios,
-          widget: list,
-          fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "scenario-post",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - {
+              label: Actors List,
+              name: scenarios,
+              widget: list,
+              fields:
             [
               { label: Image, name: img, widget: text },
               { label: Name, name: name, widget: text },
