@@ -475,8 +475,8 @@ collections:
                     name: "moreDetails",
                     widget: "object",
                     fields: [
-                      { label: More Details Name, name: moreDetailsName, widget: text }
-                      { label: More Details Text, name: moreDetailsText, widget: text }
+                      { label: More Details Name, name: moreDetailsName, widget: text },
+                      { label: More Details Text, name: moreDetailsText, widget: text },
                       { label: More Details Image, name: moreDetailsImage, widget: list,
                         fields: [{ label: Image, name: img, widget: text }],
                       }
