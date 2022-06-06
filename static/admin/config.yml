@@ -424,199 +424,63 @@ collections:
             }
           - { label: Title, name: title, widget: string }
           - {
-              label: "Banner Content",
-              name: "bannercontent",
-              widget: "object",
+              label: "Template Key",
+              name: "templatekey",
+              widget: "hidden",
+              default: "scenario-post",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - {
+              label: Actors List,
+              name: scenarios,
+              widget: list,
               fields:
                 [
-                  { label: Banner Title, name: title, widget: text },
-                  { label: Banner Description, name: text, widget: markdown },
+                  { label: Image, name: img, widget: text },
+                  { label: Name, name: name, widget: text },
                   {
-                    label: "Services",
-                    name: "service",
+                    label: "Use cases",
+                    name: "subItems",
                     widget: "list",
                     fields:
                       [
-                        { label: Link, name: link, widget: string },
-                        { label: Image, name: img, widget: string },
-                        { label: Description, name: name, widget: markdown },
+                        { label: Image, name: img, widget: text },
+                        { label: Name, name: name, widget: text },
+                      ],
+                  },
+                  {
+                    label: "Use Case Slider",
+                    name: "useCaseSlider",
+                    widget: "list",
+                    fields:
+                      [
+                        { label: Image, name: img, widget: text },
+                        { label: Name, name: name, widget: text },
+                        { label: Text, name: text, widget: text },
                       ],
                   },
                 ],
             }
           - {
-              label: "Use cases",
-              name: "usecases",
-              widget: "object",
-              fields:
-                [
-                  { label: Heading, name: heading, widget: text },
-                  { label: CIO Image, name: cioimage, widget: text },
-                  { label: Team Image, name: teamimage, widget: text },
-                  {
-                    label: "CIO Use cases",
-                    name: "ciousecases",
-                    widget: "list",
-                    fields:
-                      [
-                        { label: Image, name: img, widget: text },
-                        { label: Description, name: name, widget: text },
-                      ],
-                  },
-                  {
-                    label: "Team Use cases",
-                    name: "teamusecases",
-                    widget: "list",
-                    fields:
-                      [
-                        { label: Image, name: img, widget: text },
-                        { label: Description, name: name, widget: text },
-                      ],
-                  },
-                ],
-            }
-          - {
-              label: "Solutions",
-              name: "solutions",
+              label: "Slider",
+              name: "slider",
               widget: "list",
               fields:
                 [
                   { label: Image, name: img, widget: text },
-                  { label: Heading, name: name, widget: text },
-                  { label: Description, name: description, widget: markdown },
+                  { label: Name, name: name, widget: text },
+                  { label: Text, name: text, widget: text },
                   {
-                    label: "Checklist",
-                    name: "checklist",
-                    widget: "list",
-                    fields: [{ label: Check, name: check, widget: text }],
-                  },
-                ],
-            }
-          - {
-              label: "Primary Goals",
-              name: "goals",
-              widget: "object",
-              fields:
-                [
-                  { label: Heading, name: heading, widget: text },
-                  { label: Description, name: description, widget: markdown },
-                  {
-                    label: "Goals list",
-                    name: "goalslist",
-                    widget: "list",
-                    fields:
-                      [
-                        { label: Image, name: img, widget: text },
-                        { label: Description, name: name, widget: text },
+                    label: "More Details",
+                    name: "moreDetails",
+                    widget: "object",
+                    fields: [
+                      { label: More Details Name, name: moreDetailsName, widget: text }
+                      { label: More Details Text, name: moreDetailsText, widget: text }
+                      { label: More Details Image, name: moreDetailsImage, widget: list,
+                        fields: [{ label: Image, name: img, widget: text }],
+                      }
                       ],
                   },
                 ],
             }
-          - {
-              label: "Partners",
-              name: "partners",
-              widget: "list",
-              fields: [{ label: Image, name: img, widget: string }],
-            }
-          - {
-              label: "Success stories",
-              name: "successstories",
-              widget: "list",
-              fields:
-                [
-                  { label: Image, name: img, widget: string },
-                  { label: Heading, name: heading, widget: string },
-                  { label: Description, name: description, widget: string },
-                  { label: Link, name: link, widget: string },
-                ],
-            }
-      - file: "src/pages/survey/index.md"
-        label: "Survey"
-        name: "survey"
-        fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "survey-page",
-            }
-          - {
-              label: "Survey JSON",
-              name: "surveyjson",
-              widget: "object",
-              fields: [{ label: Data, name: data, widget: text }],
-            }
-  - name: "case"
-    label: "Case Study"
-    folder: "src/pages/case"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - {
-          label: "Template Key",
-          name: "templateKey",
-          widget: "hidden",
-          default: "case-study",
-        }
-      - { label: "Title", name: "title", widget: "string", required: false }
-      - {
-          label: "Publish Date",
-          name: "date",
-          widget: "datetime",
-          required: false,
-        }
-      - { label: "Background Image", name: "backimage", widget: "string" }
-      - {
-          label: "Banner Image",
-          name: "bannerimage",
-          widget: "string",
-          required: false,
-        }
-      - {
-          label: "Banner Description",
-          name: "bannerdescription",
-          widget: "markdown",
-          required: false,
-        }
-      - {
-          label: "Description",
-          name: "description",
-          widget: "text",
-          required: false,
-        }
-      - {
-          label: Reports,
-          name: reports,
-          required: false,
-          widget: list,
-          fields:
-            [
-              { label: Text, name: text, widget: string },
-              { label: Description, name: description, widget: markdown },
-            ],
-        }
-      - {
-          label: Challenges,
-          name: challenges,
-          required: false,
-          widget: list,
-          fields:
-            [
-              { label: Text, name: text, widget: string },
-              { label: Description, name: description, widget: markdown },
-            ],
-        }
-      - {
-          label: "Featured Post",
-          name: "featuredpost",
-          widget: "boolean",
-          required: false,
-        }
-      - {
-          label: "Featured Image",
-          name: "featuredimage",
-          widget: image,
-          required: false,
-        }
-      - { label: "Body", name: "body", widget: "markdown", required: false }
-      - { label: "Tags", name: "tags", widget: "list", required: false }
