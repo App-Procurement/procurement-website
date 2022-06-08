@@ -69,7 +69,6 @@ export const IndexPageTemplate = ({scenarios, slider }) => {
   }
 
   return (
-    <Layout>
     <section id='scenario-bg'>
       <div
         className={`scenario-slider-container ${
@@ -298,7 +297,6 @@ export const IndexPageTemplate = ({scenarios, slider }) => {
         </div>
       )}
     </section>
-    </Layout>
   );
 };
 
