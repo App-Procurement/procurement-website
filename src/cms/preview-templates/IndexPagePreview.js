@@ -35,6 +35,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { IndexPagePreview } from '../../templates/xformation-post'
+import Layout from './Layout';
 
 export default IndexPagePreview = ({ entry }) => {
   const data = entry.getIn(['data']).toJS()
@@ -47,11 +48,13 @@ export default IndexPagePreview = ({ entry }) => {
   if(data){
     console.log(scenarios)
     return (
+      <Layout>
         <IndexPagePreview
           slider={slider}
           scenarios={scenarios}
           modules={modules}
         />
+        </Layout>
     )
   }else {
     return <div>Loading...</div>
