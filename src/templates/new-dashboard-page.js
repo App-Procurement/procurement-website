@@ -12,7 +12,7 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 	const [ showSelectScenario, setShowSelectScenario ] = useState(false);
 	const [ showUseCase, setShowUseCase ] = useState(false);
 	const [ useCase, setUseCase ] = useState(null);
-	const [ selectedScenario, setSelectedScenario ] = useState(null);
+	const [ selectedScenario, setSelectedScenario ] = useState(scenarios[0]);
 	// const [ showForm, setShowForm ] = useState(false);
 	// const [ showReg, setShowReg ] = useState(false);
 
@@ -40,6 +40,7 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 	}
 
 	function selectScenario() {
+		console.log(selectedScenario);
 		return (
 			<div className="select-scenario-left">
 				{/* <button className="close-btn" onClick={onClickSelectScenarioClose}>
@@ -101,7 +102,6 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 		);
 	}
 
-	console.log(scenarios);
 	return (
 		<section id="scenario-bg">
 			<div
@@ -151,7 +151,7 @@ NewDashboardTemplate.propTypes = {
 
 const NewDashboardPage = ({ data }) => {
 	const { frontmatter } = data.markdownRemark;
-    console.log(frontmatter);
+	console.log(frontmatter);
 	return <NewDashboardTemplate scenarios={frontmatter.scenarios} slider={frontmatter.slider} />;
 };
 
