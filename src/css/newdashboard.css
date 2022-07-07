@@ -1,0 +1,99 @@
+.new-dashboard-slider-container{
+    width: 100%;
+    height: 750px;
+    
+}
+.new-dashboard-slider-container .search-box{
+    text-align: center;
+   
+}
+.new-dashboard-slider-container #search-home {
+    background-image: none;
+}
+.new-dashboard-slider-container .search-box .search-bar{
+    position: relative;
+    display: inline-block;
+}
+.new-dashboard-slider-container .search-bar > input {
+    width: 550px;
+    height: 45px;
+    background: #ffffff;
+    border: none;
+}
+.new-dashboard-slider-container .search-bar i{
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    color: #212529;
+}
+.new-dashboard-slider-container .select-scenario-left{
+    text-align: center;
+    padding-top: 75px;
+}
+.new-dashboard-slider-container .select-scenario-left ul{
+    display: inline-block;
+    margin: 0;
+    padding: 0 30px;
+    border-radius: 10px;
+    background: #ffffff;
+   
+}
+.new-dashboard-slider-container .select-scenario-left ul li{
+    display: inline-block;
+    margin: 0 20px;
+    text-align: center; 
+}
+.new-dashboard-slider-container .select-scenario-left ul li .item {
+    position: relative;
+    top: -25px;
+}
+.new-dashboard-slider-container .select-scenario-left ul li .image img{
+    border-radius: 50%;
+}
+.new-dashboard-slider-container .select-scenario-left ul li .name{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #212529;
+}
+.new-dashboard-slider-container .select-scenario-left ul li .item.active .name{
+    color: red;
+}
+
+.new-dashboard-slider-container .dashboard-sub-scenario-container{
+    margin-top: 50px;
+    background-color: transparent;
+ }
+.new-dashboard-slider-container .dashboard-sub-scenario-container ul{
+   background-color: transparent;
+   display: block
+}
+.new-dashboard-slider-container .dashboard-sub-scenario-container ul li{
+    margin: 0 15px;
+ }
+ .new-dashboard-slider-container .dashboard-sub-scenario-container ul li .item{
+    top: 0;
+ }
+.new-dashboard-slider-container .dashboard-sub-scenario-container ul li .image img{
+    border-radius: 10px;
+    width: 380px;
+    height: 200px;
+    overflow: hidden;
+    padding: 5px;
+    background: #ffffff
+}
+.new-dashboard-slider-container .dashboard-sub-scenario-container ul li .image img{
+    border-radius: 10px;
+}
+.new-dashboard-slider-container .dashboard-sub-scenario-container ul li .name{
+    text-align: left;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+}
+.dashboard-slider-container{
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}

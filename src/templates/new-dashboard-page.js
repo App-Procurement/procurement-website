@@ -9,10 +9,10 @@ import { AiFillCloseCircle } from 'react-icons/ai';
 import '../css/newdashboard.css';
 
 export const NewDashboardTemplate = ({ scenarios, slider }) => {
-	const [ showSelectScenario, setShowSelectScenario ] = useState(false);
-	const [ showUseCase, setShowUseCase ] = useState(false);
-	const [ useCase, setUseCase ] = useState(null);
-	const [ selectedScenario, setSelectedScenario ] = useState(scenarios[0]);
+	const [showSelectScenario, setShowSelectScenario] = useState(false);
+	const [showUseCase, setShowUseCase] = useState(false);
+	const [useCase, setUseCase] = useState(null);
+	const [selectedScenario, setSelectedScenario] = useState(scenarios[0]);
 	// const [ showForm, setShowForm ] = useState(false);
 	// const [ showReg, setShowReg ] = useState(false);
 
@@ -60,8 +60,8 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 												src={scenario.img}
 												alt={scenario.name}
 												title={scenario.name}
-												width="60"
-												height="60"
+												width="80"
+												height="80"
 											/>
 										</div>
 										<div className="name">{scenario.name}</div>
@@ -71,7 +71,7 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 						</ul>
 					)}
 					{selectedScenario && (
-						<div className="sub-scenario-container">
+						<div className="dashboard-sub-scenario-container">
 							<ul>
 								{selectedScenario.subItems.map((item) => (
 									<li key={v4()}>
@@ -86,8 +86,6 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 													src={item.img}
 													alt={item.name}
 													title={item.name}
-													width="60"
-													height="60"
 												/>
 											</div>
 											<div className="name">{item.name}</div>
@@ -103,28 +101,42 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 	}
 
 	return (
-		<section id="scenario-bg">
-			<div
-				className={`scenario-slider-container ${showSelectScenario === true
-					? 'select-scenario'
-					: ''} ${showUseCase === true ? 'select-usecase' : ''}`}
-			>
-				<div className="homePage-grid">
-					<div className="header">
-						<div className="logo">
-							<img src={logo} alt="" />
+		<>
+			<section id="scenario-bg">
+				<div
+					className={`new-dashboard-slider-container ${showSelectScenario === true
+						? 'select-scenario'
+						: ''} ${showUseCase === true ? 'select-usecase' : ''}`}
+				>
+					<div className="homePage-grid">
+						<div className="header">
+							<div className="logo">
+								<img src={logo} alt="" />
+							</div>
 						</div>
-					</div>
-					{selectScenario()}
-					{/* <SelectScenario
+						<div className='search-box'>
+							<div className="search-bar">
+								<input
+									type='search'
+									name=''
+									id='search-home'
+									placeholder='Search Here...'
+								/>
+								<i class="far fa-search"></i>
+							</div>
+						</div>
+						{selectScenario()}
+						{/* <SelectScenario
 						scenarios={scenarios}
 						onClickUseCase={onClickUseCase}
 						onClickCloseScenario={onClickSelectScenarioClose}
 					/> */}
+					</div>
 				</div>
-			</div>
-			{showUseCase && (
-				<div className={`scenario-slider-container ${showUseCase === true ? 'select-usecase' : ''}`}>
+
+			</section>
+			{showUseCase &&
+				<div className={`scenario-slider-container dashboard-slider-container  ${showUseCase === true ? 'select-usecase' : ''}`}>
 					<button
 						className="close-btn"
 						onClick={() => {
@@ -139,8 +151,8 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 						onClickUseCaseClose={onClickUseCaseClose}
 					/>
 				</div>
-			)}
-		</section>
+			}
+		</>
 	);
 };
 

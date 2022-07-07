@@ -52,6 +52,7 @@ body {
   margin-left: 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+ 
 }
 
 .scenario-slider-container.select-usecase .close-btn {
