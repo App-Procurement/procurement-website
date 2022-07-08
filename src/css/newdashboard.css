@@ -1,6 +1,6 @@
 .new-dashboard-slider-container{
     width: 100%;
-    height: 750px;
+    height: 670px;
     
 }
 .new-dashboard-slider-container .search-box{
@@ -96,4 +96,83 @@
     position: absolute;
     top: 0;
     z-index: 10;
+}
+@media only screen and (max-width: 1280px){
+    /* .new-dashboard-slider-container {
+        width: 100%;
+        height: 100%;
+    } */
+    .new-dashboard-slider-container .search-bar > input {
+        width: 480px;
+    }
+    .new-dashboard-slider-container .select-scenario-left ul {
+        padding: 0 20px;
+    }
+    .new-dashboard-slider-container .select-scenario-left ul li {
+        display: inline-block;
+        margin: 0 15px;
+        text-align: center;
+    }
+    .new-dashboard-slider-container .dashboard-sub-scenario-container ul li .image img {
+        width: 280px;
+        height: 170px;  
+    }
+}
+@media only screen and (max-width: 991px){
+    /* .new-dashboard-slider-container {
+        width: 100%;
+        height: 100%;
+    } */
+    .new-dashboard-slider-container .select-scenario-left ul {
+        width: 80%;
+    }
+    .new-dashboard-slider-container .select-scenario-left ul li {
+       margin-bottom: 15px;
+    }
+    .new-dashboard-slider-container .dashboard-sub-scenario-container ul {
+       width: 100%;
+    }
+    .new-dashboard-slider-container .dashboard-sub-scenario-container ul li .image img {
+        width: 210px;
+        height: 150px;
+    }
+}
+@media only screen and (max-width: 767px){
+    .new-dashboard-slider-container {
+        width: 100%;
+        height: 100%;
+    }
+    .new-dashboard-slider-container .search-box .search-bar {
+       margin-top: 30px;
+    }
+    .new-dashboard-slider-container .search-bar > input {
+        width: 400px;
+    }
+    .new-dashboard-slider-container .select-scenario-left ul li {
+        margin-bottom: 15px;
+        width: 160px;
+    }
+    .new-dashboard-slider-container .dashboard-sub-scenario-container ul li{
+        width: 100%;
+        margin: 0 0 25px 0;
+    }
+    .new-dashboard-slider-container .dashboard-sub-scenario-container ul li .image img {
+        width: 100%;
+        height: 250px;
+    }
+}
+@media only screen and (max-width: 540px){
+    .header {
+        padding: 2% 2%;
+        margin-top: 15px;
+    }
+    .new-dashboard-slider-container .search-bar > input {
+        width: 300px;
+    }
+    .new-dashboard-slider-container .select-scenario-left ul {
+        width: 90%;
+    }
+    .new-dashboard-slider-container .dashboard-sub-scenario-container ul {
+        width: 100%;
+     }
 }
