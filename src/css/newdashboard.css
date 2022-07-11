@@ -67,6 +67,22 @@
     margin-top: 50px;
     background-color: transparent;
  }
+ .new-dashboard-slider-container .dashboard-sub-scenario-container .sub-scenario-heading{
+    width: 89%;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ .new-dashboard-slider-container .dashboard-sub-scenario-container .sub-scenario-heading h2{
+    color: #ffffff;
+ }
+ .new-dashboard-slider-container .dashboard-sub-scenario-container .sub-scenario-heading .modules-btn{
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+ }
 .new-dashboard-slider-container .dashboard-sub-scenario-container ul{
    background-color: transparent;
    display: block

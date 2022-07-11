@@ -7,6 +7,7 @@ import { v4 } from 'uuid';
 // import SelectScenario from '../components/Scenario/SelectScenario';
 import { AiFillCloseCircle } from 'react-icons/ai';
 import '../css/newdashboard.css';
+// import { Scrollbars } from 'react-custom-scrollbars';
 
 export const NewDashboardTemplate = ({ scenarios, slider }) => {
 	const [showSelectScenario, setShowSelectScenario] = useState(false);
@@ -47,6 +48,10 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 					<AiFillCloseCircle />
 				</button> */}
 				<div className="scenario-container">
+					{/* <Scrollbars
+						className="scenarioleft-scrollbars"
+					> */}
+					{/* <> */}
 					{scenarios && (
 						<ul>
 							{scenarios.map((scenario) => (
@@ -72,6 +77,10 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 					)}
 					{selectedScenario && (
 						<div className="dashboard-sub-scenario-container">
+							<div className="sub-scenario-heading">
+								<h2>Procurement Admin</h2>
+								<button type="button" class="btn btn-light modules-btn">Modules</button>
+							</div>
 							<ul>
 								{selectedScenario.subItems.map((item) => (
 									<li key={v4()}>
@@ -95,6 +104,8 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 							</ul>
 						</div>
 					)}
+					{/* </> */}
+					{/* </Scrollbars> */}
 				</div>
 			</div>
 		);
