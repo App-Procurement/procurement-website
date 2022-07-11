@@ -1,6 +1,9 @@
 .new-dashboard-slider-container{
     width: 100%;
     height: 670px;
+    background-image: url(../img/newdashborad/new-dashborad-bg-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
 .new-dashboard-slider-container .search-box{
