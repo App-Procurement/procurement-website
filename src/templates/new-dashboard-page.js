@@ -179,7 +179,7 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 								<div className="form-check">
 									<input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
 									<label className="form-check-label" for="flexCheckDefault">
-										Default checkbox
+										Module Name
 									</label>
 								</div>
 							</div>
@@ -187,7 +187,7 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 								<div className="form-check">
 									<input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
 									<label className="form-check-label" for="flexCheckDefault">
-										Default checkbox
+										Module Name
 									</label>
 								</div>
 							</div>
@@ -195,7 +195,7 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 								<div className="form-check">
 									<input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
 									<label className="form-check-label" for="flexCheckDefault">
-										Default checkbox
+										Module Name
 									</label>
 								</div>
 							</div>
@@ -203,7 +203,7 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 								<div className="form-check">
 									<input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
 									<label className="form-check-label" for="flexCheckDefault">
-										Default checkbox
+										Module Name
 									</label>
 								</div>
 							</div>
@@ -211,7 +211,7 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 								<div className="form-check">
 									<input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
 									<label className="form-check-label" for="flexCheckDefault">
-										Default checkbox
+										Module Name
 									</label>
 								</div>
 							</div>
@@ -219,7 +219,7 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 								<div className="form-check">
 									<input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
 									<label className="form-check-label" for="flexCheckDefault">
-										Default checkbox
+										Module Name
 									</label>
 								</div>
 							</div>
@@ -227,7 +227,7 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 								<div className="form-check">
 									<input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
 									<label className="form-check-label" for="flexCheckDefault">
-										Default checkbox
+										Module Name
 									</label>
 								</div>
 							</div>
@@ -235,7 +235,7 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 								<div className="form-check">
 									<input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
 									<label className="form-check-label" for="flexCheckDefault">
-										Default checkbox
+										Module Name
 									</label>
 								</div>
 							</div>
@@ -243,7 +243,7 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 								<div className="form-check">
 									<input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
 									<label className="form-check-label" for="flexCheckDefault">
-										Default checkbox
+										Module Name
 									</label>
 								</div>
 							</div>
@@ -251,7 +251,7 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 								<div className="form-check">
 									<input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
 									<label className="form-check-label" for="flexCheckDefault">
-										Default checkbox
+										Module Name
 									</label>
 								</div>
 							</div>
@@ -259,7 +259,7 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 								<div className="form-check">
 									<input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
 									<label className="form-check-label" for="flexCheckDefault">
-										Default checkbox
+										Module Name
 									</label>
 								</div>
 							</div>
@@ -267,7 +267,7 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 								<div className="form-check">
 									<input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
 									<label className="form-check-label" for="flexCheckDefault">
-										Default checkbox
+										Module Name
 									</label>
 								</div>
 							</div>
@@ -275,7 +275,7 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 								<div className="form-check">
 									<input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
 									<label className="form-check-label" for="flexCheckDefault">
-										Default checkbox
+										Module Name
 									</label>
 								</div>
 							</div>
@@ -283,7 +283,7 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 								<div className="form-check">
 									<input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
 									<label className="form-check-label" for="flexCheckDefault">
-										Default checkbox
+										Module Name
 									</label>
 								</div>
 							</div>
@@ -291,7 +291,7 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 								<div className="form-check">
 									<input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
 									<label className="form-check-label" for="flexCheckDefault">
-										Default checkbox
+										Module Name
 									</label>
 								</div>
 							</div>
@@ -299,7 +299,7 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 								<div className="form-check">
 									<input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
 									<label className="form-check-label" for="flexCheckDefault">
-										Default checkbox
+										Module Name
 									</label>
 								</div>
 							</div>
@@ -307,7 +307,7 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 								<div className="form-check">
 									<input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
 									<label className="form-check-label" for="flexCheckDefault">
-										Default checkbox
+										Module Name
 									</label>
 								</div>
 							</div>
@@ -315,7 +315,7 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 								<div className="form-check">
 									<input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
 									<label className="form-check-label" for="flexCheckDefault">
-										Default checkbox
+										Module Name
 									</label>
 								</div>
 							</div>
@@ -323,7 +323,7 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 								<div className="form-check">
 									<input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
 									<label className="form-check-label" for="flexCheckDefault">
-										Default checkbox
+										Module Name
 									</label>
 								</div>
 							</div>
@@ -331,7 +331,7 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 								<div className="form-check">
 									<input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
 									<label className="form-check-label" for="flexCheckDefault">
-										Default checkbox
+										Module Name
 									</label>
 								</div>
 							</div>
