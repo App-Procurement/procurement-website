@@ -243,7 +243,7 @@ collections:
           label: "Pagerenderer JSON",
           name: "pagerendererjson",
           widget: "object",
-         fields: [{ label: "Data", name: "data", widget: "text" }],
+          fields: [{ label: "Data", name: "data", widget: "text" }],
         }
   - name: "workflowpost"
     label: "Workflow Post"
@@ -267,7 +267,7 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - file: "src/pages/index.md"
+      - file: "src/pages/newdashboardindex.md"
         label: "Landing Page"
         name: "index"
         fields:
@@ -322,13 +322,104 @@ collections:
                     label: "More Details",
                     name: "moreDetails",
                     widget: "object",
-                    fields: [
-                      { label: More Details Name, name: moreDetailsName, widget: text },
-                      { label: More Details Text, name: moreDetailsText, widget: text },
-                      { label: More Details Image, name: moreDetailsImage, widget: list,
-                        fields: [{ label: Image, name: img, widget: text }],
-                      }
+                    fields:
+                      [
+                        {
+                          label: More Details Name,
+                          name: moreDetailsName,
+                          widget: text,
+                        },
+                        {
+                          label: More Details Text,
+                          name: moreDetailsText,
+                          widget: text,
+                        },
+                        {
+                          label: More Details Image,
+                          name: moreDetailsImage,
+                          widget: list,
+                          fields: [{ label: Image, name: img, widget: text }],
+                        },
                       ],
                   },
                 ],
             }
+  - name: "newDashboard"
+    label: "New Dashboard"
+    folder: "src/pages/newdashboard/index.md"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {
+          label: "Template Key",
+          name: "templatekey",
+          widget: "hidden",
+          default: "new-dashboard-page",
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: Actors List,
+          name: scenarios,
+          widget: list,
+          fields:
+            [
+              { label: Image, name: img, widget: text },
+              { label: Name, name: name, widget: text },
+              {
+                label: "Use cases",
+                name: "subItems",
+                widget: "list",
+                fields:
+                  [
+                    { label: Image, name: img, widget: text },
+                    { label: Name, name: name, widget: text },
+                    {
+                      label: "Use Case Slider",
+                      name: "useCaseSlider",
+                      widget: "list",
+                      fields:
+                        [
+                          { label: Image, name: img, widget: text },
+                          { label: Name, name: name, widget: text },
+                          { label: Text, name: text, widget: text },
+                        ],
+                    },
+                  ],
+              },
+            ],
+        }
+      - {
+          label: "Slider",
+          name: "slider",
+          widget: "list",
+          fields:
+            [
+              { label: Image, name: img, widget: text },
+              { label: Name, name: name, widget: text },
+              { label: Text, name: text, widget: text },
+              {
+                label: "More Details",
+                name: "moreDetails",
+                widget: "object",
+                fields:
+                  [
+                    {
+                      label: More Details Name,
+                      name: moreDetailsName,
+                      widget: text,
+                    },
+                    {
+                      label: More Details Text,
+                      name: moreDetailsText,
+                      widget: text,
+                    },
+                    {
+                      label: More Details Image,
+                      name: moreDetailsImage,
+                      widget: list,
+                      fields: [{ label: Image, name: img, widget: text }],
+                    },
+                  ],
+              },
+            ],
+        }
