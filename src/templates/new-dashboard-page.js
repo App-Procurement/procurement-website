@@ -84,25 +84,30 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 								<button onClick={openModal} type="button" class="btn btn-light modules-btn">Modules</button>
 							</div>
 							<ul>
-								{selectedScenario.subItems.map((item) => (
-									<li key={v4()}>
-										<div
-											className="item"
-											onClick={() => {
-												onClickUseCase(item);
-											}}
-										>
-											<div className="image">
-												<img
-													src={item.img}
-													alt={item.name}
-													title={item.name}
-												/>
-											</div>
-											<div className="name">{item.name}</div>
-										</div>
-									</li>
-								))}
+								{selectedScenario.subItems.map((item) => {
+									if (!item.isChecked) {
+										return (
+											<li key={v4()}>
+												<div
+													className="item"
+													onClick={() => {
+														onClickUseCase(item);
+													}}
+												>
+													<div className="image">
+														<img
+															src={item.img}
+															alt={item.name}
+															title={item.name}
+														/>
+													</div>
+													<div className="name">{item.name}</div>
+												</div>
+											</li>
+										)
+									}
+								}
+								)}
 							</ul>
 						</div>
 					)}
@@ -119,6 +124,28 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 
 	function closeModal() {
 		setIsOpen(false);
+	}
+
+	function setSelectedUser(event, index) {
+		const { checked, name } = event.target;
+		if (selectedScenario.subItems && selectedScenario.subItems.length > 0) {
+			selectedScenario.subItems[index].isChecked = !checked;
+			setSelectedScenario({ ...selectedScenario, selectedScenario });
+		}
+	}
+
+	function applyFilterOfUser() {
+		setSelectedScenario({ ...selectedScenario, selectedScenario });
+		setIsOpen(false);
+	}
+
+	function clearAllFilter() {
+		if (selectedScenario.subItems && selectedScenario.subItems.length > 0) {
+			for (let i = 0; i < selectedScenario.subItems.length; i++) {
+				selectedScenario.subItems[i].isChecked = false;
+			}
+		}
+		setSelectedScenario({ ...selectedScenario, selectedScenario });
 	}
 
 	return (
@@ -167,179 +194,29 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 					/>
 				</div>
 			}
-			<Modal isOpen={modalIsOpen} onRequestClose={closeModal} >
+			<Modal isOpen={modalIsOpen}>
 				<div className="modal-main-content">
 					<div className="modal-header">
 						<h3>Select Modules</h3>
-						<span><i class="fas fa-times"></i></span>
+						<span onClick={closeModal}><i class="fas fa-times"></i></span>
 					</div>
 					<div className="modal-body-content">
 						<div className="row">
-							<div className="col-md-3">
-								<div className="form-check">
-									<input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-									<label className="form-check-label" for="flexCheckDefault">
-										Default checkbox
-									</label>
+							{selectedScenario.subItems.map((item, index) => (
+								<div className="col-md-3">
+									<div className="form-check">
+										<input className="form-check-input" checked={!item.isChecked} onChange={(e) => setSelectedUser(e, index)} type="checkbox" id="flexCheckDefault" />
+										<label className="form-check-label" htmlFor="flexCheckDefault">
+											{item.name}
+										</label>
+									</div>
 								</div>
-							</div>
-							<div className="col-md-3">
-								<div className="form-check">
-									<input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-									<label className="form-check-label" for="flexCheckDefault">
-										Default checkbox
-									</label>
-								</div>
-							</div>
-							<div className="col-md-3">
-								<div className="form-check">
-									<input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-									<label className="form-check-label" for="flexCheckDefault">
-										Default checkbox
-									</label>
-								</div>
-							</div>
-							<div className="col-md-3">
-								<div className="form-check">
-									<input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-									<label className="form-check-label" for="flexCheckDefault">
-										Default checkbox
-									</label>
-								</div>
-							</div>
-							<div className="col-md-3">
-								<div className="form-check">
-									<input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-									<label className="form-check-label" for="flexCheckDefault">
-										Default checkbox
-									</label>
-								</div>
-							</div>
-							<div className="col-md-3">
-								<div className="form-check">
-									<input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-									<label className="form-check-label" for="flexCheckDefault">
-										Default checkbox
-									</label>
-								</div>
-							</div>
-							<div className="col-md-3">
-								<div className="form-check">
-									<input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-									<label className="form-check-label" for="flexCheckDefault">
-										Default checkbox
-									</label>
-								</div>
-							</div>
-							<div className="col-md-3">
-								<div className="form-check">
-									<input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-									<label className="form-check-label" for="flexCheckDefault">
-										Default checkbox
-									</label>
-								</div>
-							</div>
-							<div className="col-md-3">
-								<div className="form-check">
-									<input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-									<label className="form-check-label" for="flexCheckDefault">
-										Default checkbox
-									</label>
-								</div>
-							</div>
-							<div className="col-md-3">
-								<div className="form-check">
-									<input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-									<label className="form-check-label" for="flexCheckDefault">
-										Default checkbox
-									</label>
-								</div>
-							</div>
-							<div className="col-md-3">
-								<div className="form-check">
-									<input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-									<label className="form-check-label" for="flexCheckDefault">
-										Default checkbox
-									</label>
-								</div>
-							</div>
-							<div className="col-md-3">
-								<div className="form-check">
-									<input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-									<label className="form-check-label" for="flexCheckDefault">
-										Default checkbox
-									</label>
-								</div>
-							</div>
-							<div className="col-md-3">
-								<div className="form-check">
-									<input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-									<label className="form-check-label" for="flexCheckDefault">
-										Default checkbox
-									</label>
-								</div>
-							</div>
-							<div className="col-md-3">
-								<div className="form-check">
-									<input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-									<label className="form-check-label" for="flexCheckDefault">
-										Default checkbox
-									</label>
-								</div>
-							</div>
-							<div className="col-md-3">
-								<div className="form-check">
-									<input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-									<label className="form-check-label" for="flexCheckDefault">
-										Default checkbox
-									</label>
-								</div>
-							</div>
-							<div className="col-md-3">
-								<div className="form-check">
-									<input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-									<label className="form-check-label" for="flexCheckDefault">
-										Default checkbox
-									</label>
-								</div>
-							</div>
-							<div className="col-md-3">
-								<div className="form-check">
-									<input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-									<label className="form-check-label" for="flexCheckDefault">
-										Default checkbox
-									</label>
-								</div>
-							</div>
-							<div className="col-md-3">
-								<div className="form-check">
-									<input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-									<label className="form-check-label" for="flexCheckDefault">
-										Default checkbox
-									</label>
-								</div>
-							</div>
-							<div className="col-md-3">
-								<div className="form-check">
-									<input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-									<label className="form-check-label" for="flexCheckDefault">
-										Default checkbox
-									</label>
-								</div>
-							</div>
-							<div className="col-md-3">
-								<div className="form-check">
-									<input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-									<label className="form-check-label" for="flexCheckDefault">
-										Default checkbox
-									</label>
-								</div>
-							</div>
+							))}
 						</div>
 					</div>
 					<div className="modal-footer">
-						<a href="#">Clear All</a>
-						<button type="button" class="btn btn-dark">Dark</button>
+						<a onClick={clearAllFilter}>Clear All</a>
+						<button type="button" class="btn btn-dark" onClick={applyFilterOfUser}>Submit</button>
 					</div>
 				</div>
 			</Modal>
