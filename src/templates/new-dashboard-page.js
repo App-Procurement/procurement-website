@@ -203,7 +203,7 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 					<div className="modal-body-content">
 						<div className="row">
 							{selectedScenario.subItems.map((item, index) => (
-								<div className="col-md-3">
+								<div className="col-md-4">
 									<div className="form-check">
 										<input className="form-check-input" checked={!item.isChecked} onChange={(e) => setSelectedUser(e, index)} type="checkbox" id="flexCheckDefault" />
 										<label className="form-check-label" htmlFor="flexCheckDefault">
@@ -216,7 +216,7 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 					</div>
 					<div className="modal-footer">
 						<a onClick={clearAllFilter}>Clear All</a>
-						<button type="button" class="btn btn-dark" onClick={applyFilterOfUser}>Submit</button>
+						<button type="button" class="btn btn-dark submit-btn" onClick={applyFilterOfUser}>Submit</button>
 					</div>
 				</div>
 			</Modal>
