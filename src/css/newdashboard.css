@@ -84,6 +84,7 @@
     padding: 8px 20px;
     border-radius: 5px;
     cursor: pointer;
+    background: #ffffff;
  }
 .new-dashboard-slider-container .dashboard-sub-scenario-container ul{
    background-color: transparent;
