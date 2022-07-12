@@ -45,11 +45,13 @@
     display: inline-block;
     margin: 0 20px;
     text-align: center; 
+    cursor: pointer;
 }
 .new-dashboard-slider-container .select-scenario-left ul li .item {
     position: relative;
     top: -25px;
 }
+
 .new-dashboard-slider-container .select-scenario-left ul li .image img{
     border-radius: 50%;
 }
