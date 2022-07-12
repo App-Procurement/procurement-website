@@ -8,12 +8,14 @@ import { v4 } from 'uuid';
 import { AiFillCloseCircle } from 'react-icons/ai';
 import '../css/newdashboard.css';
 // import { Scrollbars } from 'react-custom-scrollbars';
+import Modal from 'react-modal';
 
 export const NewDashboardTemplate = ({ scenarios, slider }) => {
 	const [showSelectScenario, setShowSelectScenario] = useState(false);
 	const [showUseCase, setShowUseCase] = useState(false);
 	const [useCase, setUseCase] = useState(null);
 	const [selectedScenario, setSelectedScenario] = useState(scenarios[0]);
+	const [modalIsOpen, setIsOpen] = React.useState(false);
 	// const [ showForm, setShowForm ] = useState(false);
 	// const [ showReg, setShowReg ] = useState(false);
 
@@ -32,6 +34,7 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 			setShowUseCase(true);
 		}
 	}
+
 	function onClickUseCaseClose() {
 		setShowUseCase(false);
 	}
@@ -41,7 +44,6 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 	}
 
 	function selectScenario() {
-		console.log(selectedScenario);
 		return (
 			<div className="select-scenario-left">
 				{/* <button className="close-btn" onClick={onClickSelectScenarioClose}>
@@ -79,7 +81,7 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 						<div className="dashboard-sub-scenario-container">
 							<div className="sub-scenario-heading">
 								<h2>Procurement Admin</h2>
-								<button type="button" class="btn btn-light modules-btn">Modules</button>
+								<button onClick={openModal} type="button" class="btn btn-light modules-btn">Modules</button>
 							</div>
 							<ul>
 								{selectedScenario.subItems.map((item) => (
@@ -111,6 +113,14 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 		);
 	}
 
+	function openModal() {
+		setIsOpen(true);
+	}
+
+	function closeModal() {
+		setIsOpen(false);
+	}
+
 	return (
 		<>
 			<section id="scenario-bg">
@@ -137,14 +147,8 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 							</div>
 						</div>
 						{selectScenario()}
-						{/* <SelectScenario
-						scenarios={scenarios}
-						onClickUseCase={onClickUseCase}
-						onClickCloseScenario={onClickSelectScenarioClose}
-					/> */}
 					</div>
 				</div>
-
 			</section>
 			{showUseCase &&
 				<div className={`scenario-slider-container dashboard-slider-container  ${showUseCase === true ? 'select-usecase' : ''}`}>
@@ -163,6 +167,12 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 					/>
 				</div>
 			}
+			<Modal
+				isOpen={modalIsOpen}
+				onRequestClose={closeModal}
+			>
+				
+			</Modal>
 		</>
 	);
 };
