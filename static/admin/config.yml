@@ -346,7 +346,7 @@ collections:
             }
   - name: "newDashboard"
     label: "New Dashboard"
-    folder: "src/pages/newdashboard/index.md"
+    folder: "src/pages/index.md"
     create: true
     slug: "{{slug}}"
     fields:
