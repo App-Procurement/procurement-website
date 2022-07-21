@@ -68,6 +68,7 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 												title={scenario.name}
 												width="80"
 												height="80"
+												style={{borderRadius: '50%'}}
 											/>
 										</div>
 										<div className="name">{scenario.name}</div>
