@@ -13,7 +13,7 @@ class Navbar extends React.Component {
 			mainMenuActiveIndex: -1,
 			activeMenu: 0,
 			mobileMenuActiveStatus: [false, false],
-			mobileSubMenuActiveStatus: [[], []],
+			mobileSubMenuActiveStatus: [[],[]],
 			currentPath: ''
 		};
 	}
@@ -236,9 +236,6 @@ class Navbar extends React.Component {
 						<li className="nav-item">
 							<Link to="/xformation/xformation/">Xformation</Link>
 						</li>
-						<li className="nav-item">
-							<Link to="/newdashboard">New Dashboard</Link>
-						</li>
 					</ul>
 				</div>
 				<div className="nav-search">
@@ -289,8 +286,8 @@ class Navbar extends React.Component {
 								<Link to="/scenario/1" className="navbar-link">Scenario</Link>
 							</li>
 							<li className="nav-item">
-								<Link to="/xformation/xformation/">Xformation</Link>
-							</li>
+							<Link to="/xformation/xformation/">Xformation</Link>
+						</li>
 						</ul>
 					</div>
 				</nav>

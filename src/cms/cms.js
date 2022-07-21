@@ -10,7 +10,6 @@ import ScenarioPagePreview from './preview-templates/ScenarioPagePreview';
 import ServicePagePreview from './preview-templates/ServicePostPreview';
 import WorkflowPagePreview from './preview-templates/WorkflowPreview';
 import PageRenderTemplate from './preview-templates/PageRendererPreview';
-import NewDashboardPreview from './preview-templates/NewDashboardPreview';
 
 CMS.registerMediaLibrary(uploadcare);
 CMS.registerMediaLibrary(cloudinary);
@@ -23,4 +22,3 @@ CMS.registerPreviewTemplate('scenario', ScenarioPagePreview);
 CMS.registerPreviewTemplate('service', ServicePagePreview);
 CMS.registerPreviewTemplate('workflowpost', WorkflowPagePreview);
 CMS.registerPreviewTemplate('pagerendererpost', PageRenderTemplate);
-CMS.registerPreviewTemplate('newdashboard', NewDashboardPreview);

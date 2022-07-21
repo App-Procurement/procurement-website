@@ -243,7 +243,7 @@ collections:
           label: "Pagerenderer JSON",
           name: "pagerendererjson",
           widget: "object",
-          fields: [{ label: "Data", name: "data", widget: "text" }],
+         fields: [{ label: "Data", name: "data", widget: "text" }],
         }
   - name: "workflowpost"
     label: "Workflow Post"
@@ -322,24 +322,12 @@ collections:
                     label: "More Details",
                     name: "moreDetails",
                     widget: "object",
-                    fields:
-                      [
-                        {
-                          label: More Details Name,
-                          name: moreDetailsName,
-                          widget: text,
-                        },
-                        {
-                          label: More Details Text,
-                          name: moreDetailsText,
-                          widget: text,
-                        },
-                        {
-                          label: More Details Image,
-                          name: moreDetailsImage,
-                          widget: list,
-                          fields: [{ label: Image, name: img, widget: text }],
-                        },
+                    fields: [
+                      { label: More Details Name, name: moreDetailsName, widget: text },
+                      { label: More Details Text, name: moreDetailsText, widget: text },
+                      { label: More Details Image, name: moreDetailsImage, widget: list,
+                        fields: [{ label: Image, name: img, widget: text }],
+                      }
                       ],
                   },
                 ],
