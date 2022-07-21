@@ -212,9 +212,7 @@ scenarios:
           - img: https://res.cloudinary.com/papu/image/upload/v1618826810/icrisat/1PSDSAdmin/3Invoce-Contact/6Vendor_Enroll_h5mtbh.jpg
             name: Vendor Enroll
             text: "We sell green and roasted coffee beans that are sourced directly from
-              independent farmers and farm cooperatives. We’re proud to offer a
-              variety of coffee beans grown with great care for the environment
-              and local communities. "
+              independent farmers and farm cooperatives."
   - img: https://res.cloudinary.com/papu/image/upload/v1618828004/icrisat/2General-Director/Director_General_cbam6k.svg
     name: Director General
     subItems:
