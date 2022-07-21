@@ -54,7 +54,7 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 				</button> */}
 				<div className="scenario-container">
 					{scenarios && (
-						<ul>
+						<ul style={{background: 'white'}}>
 							{scenarios.map((scenario) => (
 								<li key={v4()}>
 									<div
