@@ -7,8 +7,9 @@ import { v4 } from 'uuid';
 // import SelectScenario from '../components/Scenario/SelectScenario';
 import { AiFillCloseCircle } from 'react-icons/ai';
 import '../css/newdashboard.css';
-// import { Scrollbars } from 'react-custom-scrollbars';
+import { Scrollbars } from 'react-custom-scrollbars';
 import Modal from 'react-modal';
+import Carousel from 'nuka-carousel';
 
 export const NewDashboardTemplate = ({ scenarios, slider }) => {
 	const [showSelectScenario, setShowSelectScenario] = useState(false);
@@ -43,6 +44,8 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 		setSelectedScenario(scenario);
 	}
 
+
+
 	function selectScenario() {
 		return (
 			<div className="select-scenario-left">
@@ -50,10 +53,6 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 					<AiFillCloseCircle />
 				</button> */}
 				<div className="scenario-container">
-					{/* <Scrollbars
-						className="scenarioleft-scrollbars"
-					> */}
-					{/* <> */}
 					{scenarios && (
 						<ul>
 							{scenarios.map((scenario) => (
@@ -77,13 +76,53 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 							))}
 						</ul>
 					)}
+
 					{selectedScenario && (
 						<div className="dashboard-sub-scenario-container">
 							<div className="sub-scenario-heading">
 								<h2>Procurement Admin</h2>
 								<button onClick={openModal} type="button" class="btn btn-light modules-btn">Modules</button>
 							</div>
-							<ul>
+							<Carousel className="slider-section"
+								wrapAround={true}
+								autoplayInterval={1000}
+								autoplay={false}
+								slidesToShow={3}
+								withoutControls={true}
+								renderCenterLeftControls={({ previousSlide }) => (
+									<button onClick={previousSlide}>Previous</button>
+								)}
+								renderCenterRightControls={({ nextSlide }) => (
+									<button onClick={nextSlide}>Next</button>
+								)}
+							>
+								{selectedScenario.subItems.map((item) => {
+									if (!item.isChecked) {
+										return (
+											<div key={v4()}>
+												<div
+													className="item"
+													onClick={() => {
+														onClickUseCase(item);
+													}}
+												>
+													<div className="image">
+														<img
+															src={item.img}
+															alt={item.name}
+															title={item.name}
+														/>
+													</div>
+													<div className="name">{item.name}</div>
+												</div>
+											</div>
+										)
+									}
+								}
+								)}
+							</Carousel>
+
+							{/* <ul>
 								{selectedScenario.subItems.map((item) => {
 									if (!item.isChecked) {
 										return (
@@ -108,11 +147,9 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 									}
 								}
 								)}
-							</ul>
+							</ul> */}
 						</div>
 					)}
-					{/* </> */}
-					{/* </Scrollbars> */}
 				</div>
 			</div>
 		);
