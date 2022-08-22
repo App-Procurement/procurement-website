@@ -211,8 +211,8 @@ scenarios:
               and local communities. "
           - img: https://res.cloudinary.com/papu/image/upload/v1618826810/icrisat/1PSDSAdmin/3Invoce-Contact/6Vendor_Enroll_h5mtbh.jpg
             name: Vendor Enroll
-            text: "We sell green and roasted coffee beans that are sourced directly from
-              independent farmers and farm cooperatives."
+            text: We sell green and roasted coffee beans that are sourced directly from
+              independent farmers and farm cooperatives.
   - img: https://res.cloudinary.com/papu/image/upload/v1618828004/icrisat/2General-Director/Director_General_cbam6k.svg
     name: Director General
     subItems:
@@ -666,6 +666,15 @@ scenarios:
               variety of coffee beans grown with great care for the environment
               and local communities. Check our post or contact us directly for
               current availability.
+  - img: https://res.cloudinary.com/papu/image/upload/v1618832657/icrisat/6Bidding/Bidding_kc40mh.svg
+    name: New scenario
+    subItems:
+      - img: https://res.cloudinary.com/papu/image/upload/v1618832657/icrisat/6Bidding/Bidding_kc40mh.svg
+        name: Usercase 1
+        useCaseSlider:
+          - img: https://res.cloudinary.com/papu/image/upload/v1618832657/icrisat/6Bidding/Bidding_kc40mh.svg
+            name: New image
+            text: New text
 slider:
   - img: https://res.cloudinary.com/papu/image/upload/v1618134269/6Bidding/4Bidder-Enrollemnet/Bidder_Enrollment_2_gk51fg.jpg
     name: Slider 1
