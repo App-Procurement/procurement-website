@@ -599,7 +599,7 @@ scenarios:
               and local communities. Check our post or contact us directly for
               current availability.
   - img: https://res.cloudinary.com/papu/image/upload/v1618832657/icrisat/6Bidding/Bidding_kc40mh.svg
-    name: Bidder
+    name: "Bidder "
     subItems:
       - img: https://res.cloudinary.com/papu/image/upload/v1618827028/icrisat/6Bidding/Bidding-Portal/1Tender_Dashboard_njq0pe.jpg
         name: Portal
@@ -666,15 +666,6 @@ scenarios:
               variety of coffee beans grown with great care for the environment
               and local communities. Check our post or contact us directly for
               current availability.
-  - img: https://res.cloudinary.com/papu/image/upload/v1618832657/icrisat/6Bidding/Bidding_kc40mh.svg
-    name: New scenario
-    subItems:
-      - img: https://res.cloudinary.com/papu/image/upload/v1618832657/icrisat/6Bidding/Bidding_kc40mh.svg
-        name: Usercase 1
-        useCaseSlider:
-          - img: https://res.cloudinary.com/papu/image/upload/v1618832657/icrisat/6Bidding/Bidding_kc40mh.svg
-            name: New image
-            text: New text
 slider:
   - img: https://res.cloudinary.com/papu/image/upload/v1618134269/6Bidding/4Bidder-Enrollemnet/Bidder_Enrollment_2_gk51fg.jpg
     name: Slider 1
