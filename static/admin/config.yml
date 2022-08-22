@@ -344,3 +344,80 @@ collections:
                   },
                 ],
             }
+      - file: "src/pages/newdashboard/index.md"
+        label: "newdashboard"
+        name: "newdashboard"
+        fields:
+            - {
+                label: "Template Key",
+                name: "templatekey",
+                widget: "hidden",
+                default: "scenario-post",
+              }
+            - { label: "Title", name: "title", widget: "string" }
+            - {
+                label: Scenarios,
+                name: scenarios,
+                widget: list,
+                fields:
+                  [
+                    { label: Scenario Image, name: img, widget: text },
+                    { label: Name, name: name, widget: text },
+                    {
+                      label: "Use cases",
+                      name: "subItems",
+                      widget: "list",
+                      fields:
+                        [
+                          { label: Image, name: img, widget: text },
+                          { label: Name, name: name, widget: text },
+                          {
+                            label: "Use Case Slider",
+                            name: "useCaseSlider",
+                            widget: "list",
+                            fields:
+                              [
+                                { label: Image, name: img, widget: text },
+                                { label: Name, name: name, widget: text },
+                                { label: Text, name: text, widget: text },
+                              ],
+                          },
+                        ],
+                    },
+                  ],
+              }
+            - {
+                label: "Slider",
+                name: "slider",
+                widget: "list",
+                fields:
+                  [
+                    { label: Image, name: img, widget: text },
+                    { label: Name, name: name, widget: text },
+                    { label: Text, name: text, widget: text },
+                    {
+                      label: "More Details",
+                      name: "moreDetails",
+                      widget: "object",
+                      fields:
+                        [
+                          {
+                            label: More Details Name,
+                            name: moreDetailsName,
+                            widget: text,
+                          },
+                          {
+                            label: More Details Text,
+                            name: moreDetailsText,
+                            widget: text,
+                          },
+                          {
+                            label: More Details Image,
+                            name: moreDetailsImage,
+                            widget: list,
+                            fields: [{ label: Image, name: img, widget: text }],
+                          },
+                        ],
+                    },
+                  ],
+              }
