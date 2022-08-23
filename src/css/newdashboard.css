@@ -1,6 +1,6 @@
 .new-dashboard-slider-container{
     width: 100%;
-    height: 665px;
+    height: 700px;
     background-image: url(../img/newdashborad/new-dashborad-bg-img.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -112,7 +112,7 @@
  }
 
 
-.new-dashboard-slider-container .dashboard-sub-scenario-container .slider-section .name{
+.new-dashboard-slider-container .dashboard-sub-scenario-container .slider-section .item .name{
     text-align: left;
     color: #ffffff;
     font-size: 16px;
@@ -120,6 +120,22 @@
     font-weight: 500;
     padding: 10px 16px;
 }
+.new-dashboard-slider-container .dashboard-sub-scenario-container
+.slider-section .item .product-links{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.new-dashboard-slider-container .dashboard-sub-scenario-container
+.slider-section .item .product-links a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    padding: 0;
+}
+
 .dashboard-slider-container{
     position: absolute;
     top: 0;

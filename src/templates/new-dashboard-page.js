@@ -116,8 +116,10 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 															title={item.name}
 														/>
 													</div>
-													<div className="name"><Link to={item.link}>Link</Link></div>
-													<div className="name"> <Link to={item.screenshots}>screenshots</Link></div>
+													<div className="product-links">
+														<div className="name"><Link to={item.link}>Link</Link></div>
+														<div className="name"> <Link to={item.screenshots}>screenshots</Link></div>
+													</div>
 												</div>
 											</div>
 										)
@@ -194,24 +196,24 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 	}
 	function handleCheckList(subItems) {
 		let modules = []
-	let retData=[];
-	for (let i=0; i<subItems.length; i++){
-	let data = subItems[i]
-		if (modules.indexOf(data.module)===-1){
-	retData.push(
-			<div className="col-md-4">
-				<div className="form-check">
-					<input className="form-check-input" checked={!data.isChecked} onChange={(e) => setSelectedUser(e, i, data.module)} type="checkbox" id="flexCheckDefault" />
-					<label className="form-check-label" htmlFor="flexCheckDefault">
-						{data.module}
-					</label>
-				</div>
-			</div>
-	)
-	}
-	modules.push(data.module)
-}
-return retData
+		let retData = [];
+		for (let i = 0; i < subItems.length; i++) {
+			let data = subItems[i]
+			if (modules.indexOf(data.module) === -1) {
+				retData.push(
+					<div className="col-md-4">
+						<div className="form-check">
+							<input className="form-check-input" checked={!data.isChecked} onChange={(e) => setSelectedUser(e, i, data.module)} type="checkbox" id="flexCheckDefault" />
+							<label className="form-check-label" htmlFor="flexCheckDefault">
+								{data.module}
+							</label>
+						</div>
+					</div>
+				)
+			}
+			modules.push(data.module)
+		}
+		return retData
 	}
 	return (
 		<>
