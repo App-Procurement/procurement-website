@@ -10,6 +10,7 @@ import '../css/newdashboard.css';
 import { Scrollbars } from 'react-custom-scrollbars';
 import Modal from 'react-modal';
 import Carousel from 'nuka-carousel';
+import { Button } from 'react-bootstrap';
 
 export const NewDashboardTemplate = ({ scenarios, slider }) => {
 	const [showSelectScenario, setShowSelectScenario] = useState(false);
@@ -54,7 +55,7 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 				</button> */}
 				<div className="scenario-container">
 					{scenarios && (
-						<ul style={{background: 'white'}}>
+						<ul style={{ background: 'white' }}>
 							{scenarios.map((scenario) => (
 								<li key={v4()}>
 									<div
@@ -68,7 +69,7 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 												title={scenario.name}
 												width="80"
 												height="80"
-												style={{borderRadius: '50%'}}
+												style={{ borderRadius: '50%' }}
 											/>
 										</div>
 										<div className="name">{scenario.name}</div>
@@ -103,18 +104,20 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 											<div key={v4()}>
 												<div
 													className="item"
-													onClick={() => {
-														onClickUseCase(item);
-													}}
+
 												>
-													<div className="image">
+													<div className="name">{item.name}</div>
+													<div className="image" onClick={() => {
+														onClickUseCase(item);
+													}}>
 														<img
 															src={item.img}
 															alt={item.name}
 															title={item.name}
 														/>
 													</div>
-													<div className="name">{item.name}</div>
+													<div className="name"><Link to={item.link}>Link</Link></div>
+													<div className="name"> <Link to={item.screenshots}>screenshots</Link></div>
 												</div>
 											</div>
 										)
@@ -164,10 +167,14 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 		setIsOpen(false);
 	}
 
-	function setSelectedUser(event, index) {
+	function setSelectedUser(event, index, module) {
 		const { checked, name } = event.target;
 		if (selectedScenario.subItems && selectedScenario.subItems.length > 0) {
-			selectedScenario.subItems[index].isChecked = !checked;
+			for (let i = 0; i < selectedScenario.subItems.length; i++) {
+				if (i === index || selectedScenario.subItems[i].module === module) {
+					selectedScenario.subItems[i].isChecked = !checked
+				}
+			}
 			setSelectedScenario({ ...selectedScenario, selectedScenario });
 		}
 	}
@@ -185,7 +192,27 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 		}
 		setSelectedScenario({ ...selectedScenario, selectedScenario });
 	}
-
+	function handleCheckList(subItems) {
+		let modules = []
+	let retData=[];
+	for (let i=0; i<subItems.length; i++){
+	let data = subItems[i]
+		if (modules.indexOf(data.module)===-1){
+	retData.push(
+			<div className="col-md-4">
+				<div className="form-check">
+					<input className="form-check-input" checked={!data.isChecked} onChange={(e) => setSelectedUser(e, i, data.module)} type="checkbox" id="flexCheckDefault" />
+					<label className="form-check-label" htmlFor="flexCheckDefault">
+						{data.module}
+					</label>
+				</div>
+			</div>
+	)
+	}
+	modules.push(data.module)
+}
+return retData
+	}
 	return (
 		<>
 			<section id="scenario-bg">
@@ -240,16 +267,19 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 					</div>
 					<div className="modal-body-content">
 						<div className="row">
-							{selectedScenario.subItems.map((item, index) => (
+							{selectedScenario?.subItems?.length > 0 &&
+								handleCheckList(selectedScenario.subItems)
+							}
+							{/* {selectedScenario.subItems.map((item, index) => (
 								<div className="col-md-4">
 									<div className="form-check">
-										<input className="form-check-input" checked={!item.isChecked} onChange={(e) => setSelectedUser(e, index)} type="checkbox" id="flexCheckDefault" />
+										<input className="form-check-input" checked={!item.isChecked} onChange={(e) => setSelectedUser(e, index, item.module)} type="checkbox" id="flexCheckDefault" />
 										<label className="form-check-label" htmlFor="flexCheckDefault">
-											{item.name}
+											{item.module}
 										</label>
 									</div>
 								</div>
-							))}
+							))} */}
 						</div>
 					</div>
 					<div className="modal-footer">
@@ -269,7 +299,6 @@ NewDashboardTemplate.propTypes = {
 
 const NewDashboardPage = ({ data }) => {
 	const { frontmatter } = data.markdownRemark;
-	console.log(frontmatter);
 	return <NewDashboardTemplate scenarios={frontmatter.scenarios} slider={frontmatter.slider} />;
 };
 
@@ -293,6 +322,9 @@ export const newDashboardPageQuery = graphql`
 					subItems {
 						img
 						name
+						link
+						screenshots,
+						module
 						useCaseSlider {
 							img
 							name
