@@ -7,6 +7,9 @@ scenarios:
     subItems:
       - img: https://res.cloudinary.com/papu/image/upload/v1618826806/icrisat/1PSDSAdmin/1Admin-Portal/1Dashboard_h0hoxl.jpg
         name: Portal
+        link: "http://localhost:8888/newdashboard"
+        screenshots: "http://localhost:8888/newdashboard"
+        module: test1
         useCaseSlider:
           - text: We sell green and roasted coffee beans that are sourced directly from
               independent farmers and farm cooperatives. We’re proud to offer a
@@ -90,6 +93,9 @@ scenarios:
               current availability.
       - img: https://res.cloudinary.com/papu/image/upload/v1618826808/icrisat/1PSDSAdmin/2Purchase-Order/1RFP_janjms.jpg
         name: Request For Proposal
+        link: "http://localhost:8888/newdashboard"
+        screenshots: "http://localhost:8888/newdashboard"
+        module: test1
         useCaseSlider:
           - img: https://res.cloudinary.com/papu/image/upload/v1618826808/icrisat/1PSDSAdmin/2Purchase-Order/1RFP_janjms.jpg
             name: RFP
@@ -178,6 +184,9 @@ scenarios:
               current availability.
       - img: https://res.cloudinary.com/papu/image/upload/v1618826810/icrisat/1PSDSAdmin/3Invoce-Contact/1Invoices_lwhnkl.jpg
         name: Invoice & Contacts
+        link: "http://localhost:8888/newdashboard"
+        screenshots: "http://localhost:8888/newdashboard"
+        module: test3
         useCaseSlider:
           - img: https://res.cloudinary.com/papu/image/upload/v1618826810/icrisat/1PSDSAdmin/3Invoce-Contact/1Invoices_lwhnkl.jpg
             name: Invoice
@@ -218,6 +227,9 @@ scenarios:
     subItems:
       - img: https://res.cloudinary.com/papu/image/upload/v1618826865/icrisat/2General-Director/1Director-Portal/1Director_Dashboard_dahlna.jpg
         name: Portal
+        link: "http://localhost:8888/newdashboard"
+        screenshots: "http://localhost:8888/newdashboard"
+        module: test4
         useCaseSlider:
           - img: https://res.cloudinary.com/papu/image/upload/v1618826865/icrisat/2General-Director/1Director-Portal/1Director_Dashboard_dahlna.jpg
             name: Director Dashboard
@@ -331,6 +343,9 @@ scenarios:
               current availability.
       - img: https://res.cloudinary.com/papu/image/upload/v1618826865/icrisat/2General-Director/1Director-Portal/7RFP_izt22w.jpg
         name: Request For Proposal
+        link: "http://localhost:8888/newdashboard"
+        screenshots: "http://localhost:8888/newdashboard"
+        module: test5
         useCaseSlider:
           - img: https://res.cloudinary.com/papu/image/upload/v1618826865/icrisat/2General-Director/1Director-Portal/7RFP_izt22w.jpg
             name: Request For Proposal
@@ -348,6 +363,9 @@ scenarios:
             name: Send Request For Proposal
       - img: https://res.cloudinary.com/papu/image/upload/v1618826865/icrisat/2General-Director/1Director-Portal/9Approve_P_O_wjqxga.jpg
         name: Purchase Order
+        link: "http://localhost:8888/newdashboard"
+        screenshots: "http://localhost:8888/newdashboard"
+        module: test6
         useCaseSlider:
           - img: https://res.cloudinary.com/papu/image/upload/v1618826865/icrisat/2General-Director/1Director-Portal/9Approve_P_O_wjqxga.jpg
             name: Approve Purchase Order
@@ -368,6 +386,9 @@ scenarios:
     subItems:
       - img: https://res.cloudinary.com/papu/image/upload/v1618826911/icrisat/3Buyer/Buyer-Portal/1Buyer_h8mn8i.jpg
         name: Portal
+        link: "http://localhost:8888/newdashboard"
+        screenshots: "http://localhost:8888/newdashboard"
+        module: test7
         useCaseSlider:
           - img: https://res.cloudinary.com/papu/image/upload/v1618826911/icrisat/3Buyer/Buyer-Portal/1Buyer_h8mn8i.jpg
             name: Buyer
@@ -426,6 +447,9 @@ scenarios:
               current availability.
       - img: https://res.cloudinary.com/papu/image/upload/v1618826911/icrisat/3Buyer/Quotation-PO-Generate/1Vendor_Quotatons_cnr6jv.jpg
         name: Generate Purchase Order
+        link: "http://localhost:8888/newdashboard"
+        screenshots: "http://localhost:8888/newdashboard"
+        module: test8
         useCaseSlider:
           - img: https://res.cloudinary.com/papu/image/upload/v1618826911/icrisat/3Buyer/Quotation-PO-Generate/1Vendor_Quotatons_cnr6jv.jpg
             name: Vendor Quotation
@@ -465,6 +489,9 @@ scenarios:
     subItems:
       - img: https://res.cloudinary.com/papu/image/upload/v1618826963/icrisat/4Requestor/Requisitor-Portal/1Requistioner_tzuo5h.jpg
         name: Portal
+        link: "http://localhost:8888/newdashboard"
+        screenshots: "http://localhost:8888/newdashboard"
+        module: test9
         useCaseSlider:
           - name: Requisitioner
             text: We sell green and roasted coffee beans that are sourced directly from
@@ -499,6 +526,9 @@ scenarios:
     subItems:
       - img: https://res.cloudinary.com/papu/image/upload/v1618827008/icrisat/5Vendor-portal/1Vendor-Portal/1Tenderer_Dashboard_mozvtk.jpg
         name: Portal
+        link: "http://localhost:8888/newdashboard"
+        screenshots: "http://localhost:8888/newdashboard"
+        module: test10
         useCaseSlider:
           - img: https://res.cloudinary.com/papu/image/upload/v1618827008/icrisat/5Vendor-portal/1Vendor-Portal/1Tenderer_Dashboard_mozvtk.jpg
             name: Tenderer Dashboard
@@ -563,6 +593,9 @@ scenarios:
               current availability.
       - img: https://res.cloudinary.com/papu/image/upload/v1618827009/icrisat/5Vendor-portal/2Clarification/1Clarification_nkjcwc.jpg
         name: Clarification
+        link: "http://localhost:8888/newdashboard"
+        screenshots: "http://localhost:8888/newdashboard"
+        module: test11
         useCaseSlider:
           - img: https://res.cloudinary.com/papu/image/upload/v1618827009/icrisat/5Vendor-portal/2Clarification/1Clarification_nkjcwc.jpg
             name: Clarification
@@ -603,6 +636,9 @@ scenarios:
     subItems:
       - img: https://res.cloudinary.com/papu/image/upload/v1618827028/icrisat/6Bidding/Bidding-Portal/1Tender_Dashboard_njq0pe.jpg
         name: Portal
+        link: "http://localhost:8888/newdashboard"
+        screenshots: "http://localhost:8888/newdashboard"
+        module: test12
         useCaseSlider:
           - img: https://res.cloudinary.com/papu/image/upload/v1618827028/icrisat/6Bidding/Bidding-Portal/1Tender_Dashboard_njq0pe.jpg
             name: Tender Dashboard
@@ -666,15 +702,6 @@ scenarios:
               variety of coffee beans grown with great care for the environment
               and local communities. Check our post or contact us directly for
               current availability.
-  - img: https://res.cloudinary.com/papu/image/upload/v1618827131/icrisat/1PSDSAdmin/PSDS_Admin_h2rcrg.svg
-    name: New Actor
-    subItems:
-      - img: https://res.cloudinary.com/papu/image/upload/v1618827131/icrisat/1PSDSAdmin/PSDS_Admin_h2rcrg.svg
-        name: New actor use case
-        useCaseSlider:
-          - img: https://res.cloudinary.com/papu/image/upload/v1618827008/icrisat/5Vendor-portal/1Vendor-Portal/1Tenderer_Dashboard_mozvtk.jpg
-            name: Slider
-            text: dummy explanation
 slider:
   - img: https://res.cloudinary.com/papu/image/upload/v1618134269/6Bidding/4Bidder-Enrollemnet/Bidder_Enrollment_2_gk51fg.jpg
     name: Slider 1
