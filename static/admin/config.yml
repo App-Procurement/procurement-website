@@ -373,6 +373,7 @@ collections:
                           { label: Name, name: name, widget: text },
                           { label: Link, name: link, widget: "string" },
                           { label: Screen Shots, name: screenshots, widget: "string" },
+                          {label: Module, name: module, widget: text},
                           {
                             label: "Use Case Slider",
                             name: "useCaseSlider",
