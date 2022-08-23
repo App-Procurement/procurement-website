@@ -18,7 +18,7 @@ CMS.registerMediaLibrary(cloudinary);
 CMS.registerPreviewTemplate('index', IndexPagePreview);
 CMS.registerPreviewTemplate('blog', BlogPostPreview);
 CMS.registerPreviewTemplate('case', CasePostPreview);
-CMS.registerPreviewTemplate('survey', SurveyTemplate);
+// CMS.registerPreviewTemplate('survey', SurveyTemplate);
 CMS.registerPreviewTemplate('scenario', ScenarioPagePreview);
 CMS.registerPreviewTemplate('service', ServicePagePreview);
 CMS.registerPreviewTemplate('workflowpost', WorkflowPagePreview);

@@ -666,6 +666,15 @@ scenarios:
               variety of coffee beans grown with great care for the environment
               and local communities. Check our post or contact us directly for
               current availability.
+  - img: https://res.cloudinary.com/papu/image/upload/v1618827131/icrisat/1PSDSAdmin/PSDS_Admin_h2rcrg.svg
+    name: New Actor
+    subItems:
+      - img: https://res.cloudinary.com/papu/image/upload/v1618827131/icrisat/1PSDSAdmin/PSDS_Admin_h2rcrg.svg
+        name: New actor use case
+        useCaseSlider:
+          - img: https://res.cloudinary.com/papu/image/upload/v1618827008/icrisat/5Vendor-portal/1Vendor-Portal/1Tenderer_Dashboard_mozvtk.jpg
+            name: Slider
+            text: dummy explanation
 slider:
   - img: https://res.cloudinary.com/papu/image/upload/v1618134269/6Bidding/4Bidder-Enrollemnet/Bidder_Enrollment_2_gk51fg.jpg
     name: Slider 1

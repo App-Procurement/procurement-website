@@ -1,8 +1,7 @@
 import React from 'react';
-import * as Survey from "survey-react";
-import 'survey-react/survey.css';
+// import * as Survey from "survey-react";
+// import 'survey-react/survey.css';
 import { Pie, Line } from 'react-chartjs-2';
-
 class SurveyCreator extends React.Component {
     piechartdata;
     linePointChart;
@@ -125,11 +124,11 @@ class SurveyCreator extends React.Component {
 
     render() {
         const { data, isCompletesurvey } = this.state;
-        var model = new Survey.Model(data);
-        model.completedHtml = "<span></span>";
+        // var model = new Survey.Model(data);
+        // model.completedHtml = "<span></span>";
         return (
             <div>
-                {!isCompletesurvey &&
+                {/* {!isCompletesurvey &&
                     <Survey.Survey onComplete={this.onComplete} model={model} />
                 }
                 {isCompletesurvey && <div>
@@ -172,7 +171,7 @@ class SurveyCreator extends React.Component {
                             }
                         }}
                     />
-                </div>}
+                </div>} */}
             </div>
         );
     }

@@ -28,7 +28,7 @@ const SurveyPage = ({ data }) => {
 
   return (
     <Layout>
-      <SurveyTemplate Surveyjson={frontmatter.Surveyjson} />
+      {/* <SurveyTemplate Surveyjson={frontmatter.Surveyjson} /> */}
     </Layout>
   );
 };
