@@ -203,10 +203,8 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 				retData.push(
 					<div className="col-md-4">
 						<div className="form-check">
-							<div className="user-profile">
-								<input className="form-check-input" checked={!data.isChecked} onChange={(e) => setSelectedUser(e, i, data.module)} type="checkbox" id="flexCheckDefault" />
-								<img src={data.logo} alt={data.logo} width="15%" />
-							</div>
+							<input className="form-check-input" checked={!data.isChecked} onChange={(e) => setSelectedUser(e, i, data.module)} type="checkbox" id="flexCheckDefault" />
+							<img src={data.logo} alt={data.logo} width="15%" />
 							<label className="form-check-label" htmlFor="flexCheckDefault">
 								{data.module}
 							</label>
