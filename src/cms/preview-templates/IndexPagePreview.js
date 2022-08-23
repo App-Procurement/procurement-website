@@ -36,7 +36,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { IndexPagePreview } from '../../templates/xformation-post'
 
-export default IndexPagePreview = ({ entry }) => {
+export const IndexPagePreview = ({ entry }) => {
   const data = entry.getIn(['data']).toJS()
   const entrySlider = entry.getIn(['data', 'slider'])
   const slider = entrySlider ? entrySlider.toJS() : []

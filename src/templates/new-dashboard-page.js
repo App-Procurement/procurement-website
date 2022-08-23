@@ -202,6 +202,7 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 			<div className="col-md-4">
 				<div className="form-check">
 					<input className="form-check-input" checked={!data.isChecked} onChange={(e) => setSelectedUser(e, i, data.module)} type="checkbox" id="flexCheckDefault" />
+					<img src={data.logo} alt={data.logo} width="15%"/>
 					<label className="form-check-label" htmlFor="flexCheckDefault">
 						{data.module}
 					</label>
@@ -323,8 +324,9 @@ export const newDashboardPageQuery = graphql`
 						img
 						name
 						link
-						screenshots,
+						screenshots
 						module
+						logo
 						useCaseSlider {
 							img
 							name
