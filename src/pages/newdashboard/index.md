@@ -7,8 +7,8 @@ scenarios:
     subItems:
       - img: https://res.cloudinary.com/papu/image/upload/v1618826806/icrisat/1PSDSAdmin/1Admin-Portal/1Dashboard_h0hoxl.jpg
         name: Portal
-        link: "http://localhost:8888/newdashboard"
-        screenshots: "http://localhost:8888/newdashboard"
+        link: http://localhost:8888/newdashboard
+        screenshots: http://localhost:8888/newdashboard
         module: test1
         useCaseSlider:
           - text: We sell green and roasted coffee beans that are sourced directly from
@@ -91,11 +91,12 @@ scenarios:
               variety of coffee beans grown with great care for the environment
               and local communities. Check our post or contact us directly for
               current availability.
+        logo: https://res.cloudinary.com/papu/image/upload/v1618827131/icrisat/1PSDSAdmin/PSDS_Admin_h2rcrg
       - img: https://res.cloudinary.com/papu/image/upload/v1618826808/icrisat/1PSDSAdmin/2Purchase-Order/1RFP_janjms.jpg
         name: Request For Proposal
-        link: "http://localhost:8888/newdashboard"
-        screenshots: "http://localhost:8888/newdashboard"
-        module: test1
+        link: http://localhost:8888/newdashboard
+        screenshots: http://localhost:8888/newdashboard
+        module: test2
         useCaseSlider:
           - img: https://res.cloudinary.com/papu/image/upload/v1618826808/icrisat/1PSDSAdmin/2Purchase-Order/1RFP_janjms.jpg
             name: RFP
@@ -182,10 +183,11 @@ scenarios:
               variety of coffee beans grown with great care for the environment
               and local communities. Check our post or contact us directly for
               current availability.
+        logo: https://res.cloudinary.com/papu/image/upload/v1618827131/icrisat/1PSDSAdmin/PSDS_Admin_h2rcrg
       - img: https://res.cloudinary.com/papu/image/upload/v1618826810/icrisat/1PSDSAdmin/3Invoce-Contact/1Invoices_lwhnkl.jpg
         name: Invoice & Contacts
-        link: "http://localhost:8888/newdashboard"
-        screenshots: "http://localhost:8888/newdashboard"
+        link: http://localhost:8888/newdashboard
+        screenshots: http://localhost:8888/newdashboard
         module: test3
         useCaseSlider:
           - img: https://res.cloudinary.com/papu/image/upload/v1618826810/icrisat/1PSDSAdmin/3Invoce-Contact/1Invoices_lwhnkl.jpg
@@ -222,13 +224,14 @@ scenarios:
             name: Vendor Enroll
             text: We sell green and roasted coffee beans that are sourced directly from
               independent farmers and farm cooperatives.
+        logo: https://res.cloudinary.com/papu/image/upload/v1618827131/icrisat/1PSDSAdmin/PSDS_Admin_h2rcrg
   - img: https://res.cloudinary.com/papu/image/upload/v1618828004/icrisat/2General-Director/Director_General_cbam6k.svg
     name: Director General
     subItems:
       - img: https://res.cloudinary.com/papu/image/upload/v1618826865/icrisat/2General-Director/1Director-Portal/1Director_Dashboard_dahlna.jpg
         name: Portal
-        link: "http://localhost:8888/newdashboard"
-        screenshots: "http://localhost:8888/newdashboard"
+        link: http://localhost:8888/newdashboard
+        screenshots: http://localhost:8888/newdashboard
         module: test4
         useCaseSlider:
           - img: https://res.cloudinary.com/papu/image/upload/v1618826865/icrisat/2General-Director/1Director-Portal/1Director_Dashboard_dahlna.jpg
@@ -341,10 +344,11 @@ scenarios:
               variety of coffee beans grown with great care for the environment
               and local communities. Check our post or contact us directly for
               current availability.
+        logo: https://res.cloudinary.com/papu/image/upload/v1618827131/icrisat/1PSDSAdmin/PSDS_Admin_h2rcrg
       - img: https://res.cloudinary.com/papu/image/upload/v1618826865/icrisat/2General-Director/1Director-Portal/7RFP_izt22w.jpg
         name: Request For Proposal
-        link: "http://localhost:8888/newdashboard"
-        screenshots: "http://localhost:8888/newdashboard"
+        link: http://localhost:8888/newdashboard
+        screenshots: http://localhost:8888/newdashboard
         module: test5
         useCaseSlider:
           - img: https://res.cloudinary.com/papu/image/upload/v1618826865/icrisat/2General-Director/1Director-Portal/7RFP_izt22w.jpg
@@ -361,10 +365,11 @@ scenarios:
               and local communities. Check our post or contact us directly for
               current availability.
             name: Send Request For Proposal
+        logo: https://res.cloudinary.com/papu/image/upload/v1618827131/icrisat/1PSDSAdmin/PSDS_Admin_h2rcrg
       - img: https://res.cloudinary.com/papu/image/upload/v1618826865/icrisat/2General-Director/1Director-Portal/9Approve_P_O_wjqxga.jpg
         name: Purchase Order
-        link: "http://localhost:8888/newdashboard"
-        screenshots: "http://localhost:8888/newdashboard"
+        link: http://localhost:8888/newdashboard
+        screenshots: http://localhost:8888/newdashboard
         module: test6
         useCaseSlider:
           - img: https://res.cloudinary.com/papu/image/upload/v1618826865/icrisat/2General-Director/1Director-Portal/9Approve_P_O_wjqxga.jpg
@@ -381,13 +386,14 @@ scenarios:
               variety of coffee beans grown with great care for the environment
               and local communities. Check our post or contact us directly for
               current availability.
+        logo: https://res.cloudinary.com/papu/image/upload/v1618827131/icrisat/1PSDSAdmin/PSDS_Admin_h2rcrg
   - img: https://res.cloudinary.com/papu/image/upload/v1618830793/icrisat/3Buyer/Buyer_eotxzx.svg
     name: Buyer
     subItems:
       - img: https://res.cloudinary.com/papu/image/upload/v1618826911/icrisat/3Buyer/Buyer-Portal/1Buyer_h8mn8i.jpg
         name: Portal
-        link: "http://localhost:8888/newdashboard"
-        screenshots: "http://localhost:8888/newdashboard"
+        link: http://localhost:8888/newdashboard
+        screenshots: http://localhost:8888/newdashboard
         module: test7
         useCaseSlider:
           - img: https://res.cloudinary.com/papu/image/upload/v1618826911/icrisat/3Buyer/Buyer-Portal/1Buyer_h8mn8i.jpg
@@ -445,10 +451,11 @@ scenarios:
               variety of coffee beans grown with great care for the environment
               and local communities. Check our post or contact us directly for
               current availability.
+        logo: https://res.cloudinary.com/papu/image/upload/v1618827131/icrisat/1PSDSAdmin/PSDS_Admin_h2rcrg
       - img: https://res.cloudinary.com/papu/image/upload/v1618826911/icrisat/3Buyer/Quotation-PO-Generate/1Vendor_Quotatons_cnr6jv.jpg
         name: Generate Purchase Order
-        link: "http://localhost:8888/newdashboard"
-        screenshots: "http://localhost:8888/newdashboard"
+        link: http://localhost:8888/newdashboard
+        screenshots: http://localhost:8888/newdashboard
         module: test8
         useCaseSlider:
           - img: https://res.cloudinary.com/papu/image/upload/v1618826911/icrisat/3Buyer/Quotation-PO-Generate/1Vendor_Quotatons_cnr6jv.jpg
@@ -484,13 +491,14 @@ scenarios:
               independent farmers and farm cooperatives. We’re proud to offer a
               variety of coffee beans grown with great care for the environment
               and local communities. Check
+        logo: https://res.cloudinary.com/papu/image/upload/v1618827131/icrisat/1PSDSAdmin/PSDS_Admin_h2rcrg
   - img: https://res.cloudinary.com/papu/image/upload/v1618831033/icrisat/4Requestor/Requisitioner_gdqhmt.svg
     name: Requisitioner
     subItems:
       - img: https://res.cloudinary.com/papu/image/upload/v1618826963/icrisat/4Requestor/Requisitor-Portal/1Requistioner_tzuo5h.jpg
         name: Portal
-        link: "http://localhost:8888/newdashboard"
-        screenshots: "http://localhost:8888/newdashboard"
+        link: http://localhost:8888/newdashboard
+        screenshots: http://localhost:8888/newdashboard
         module: test9
         useCaseSlider:
           - name: Requisitioner
@@ -521,13 +529,14 @@ scenarios:
               variety of coffee beans grown with great care for the environment
               and local communities. Check our post or contact us directly for
               current availability.
+        logo: https://res.cloudinary.com/papu/image/upload/v1618827131/icrisat/1PSDSAdmin/PSDS_Admin_h2rcrg
   - img: https://res.cloudinary.com/papu/image/upload/v1618832633/icrisat/5Vendor-portal/Vendor_grre9u.svg
     name: Vendor
     subItems:
       - img: https://res.cloudinary.com/papu/image/upload/v1618827008/icrisat/5Vendor-portal/1Vendor-Portal/1Tenderer_Dashboard_mozvtk.jpg
         name: Portal
-        link: "http://localhost:8888/newdashboard"
-        screenshots: "http://localhost:8888/newdashboard"
+        link: http://localhost:8888/newdashboard
+        screenshots: http://localhost:8888/newdashboard
         module: test10
         useCaseSlider:
           - img: https://res.cloudinary.com/papu/image/upload/v1618827008/icrisat/5Vendor-portal/1Vendor-Portal/1Tenderer_Dashboard_mozvtk.jpg
@@ -591,10 +600,11 @@ scenarios:
               variety of coffee beans grown with great care for the environment
               and local communities. Check our post or contact us directly for
               current availability.
+        logo: https://res.cloudinary.com/papu/image/upload/v1618827131/icrisat/1PSDSAdmin/PSDS_Admin_h2rcrg
       - img: https://res.cloudinary.com/papu/image/upload/v1618827009/icrisat/5Vendor-portal/2Clarification/1Clarification_nkjcwc.jpg
         name: Clarification
-        link: "http://localhost:8888/newdashboard"
-        screenshots: "http://localhost:8888/newdashboard"
+        link: http://localhost:8888/newdashboard
+        screenshots: http://localhost:8888/newdashboard
         module: test11
         useCaseSlider:
           - img: https://res.cloudinary.com/papu/image/upload/v1618827009/icrisat/5Vendor-portal/2Clarification/1Clarification_nkjcwc.jpg
@@ -631,13 +641,14 @@ scenarios:
               variety of coffee beans grown with great care for the environment
               and local communities. Check our post or contact us directly for
               current availability.
+        logo: https://res.cloudinary.com/papu/image/upload/v1618827131/icrisat/1PSDSAdmin/PSDS_Admin_h2rcrg
   - img: https://res.cloudinary.com/papu/image/upload/v1618832657/icrisat/6Bidding/Bidding_kc40mh.svg
     name: "Bidder "
     subItems:
       - img: https://res.cloudinary.com/papu/image/upload/v1618827028/icrisat/6Bidding/Bidding-Portal/1Tender_Dashboard_njq0pe.jpg
         name: Portal
-        link: "http://localhost:8888/newdashboard"
-        screenshots: "http://localhost:8888/newdashboard"
+        link: http://localhost:8888/newdashboard
+        screenshots: http://localhost:8888/newdashboard
         module: test12
         useCaseSlider:
           - img: https://res.cloudinary.com/papu/image/upload/v1618827028/icrisat/6Bidding/Bidding-Portal/1Tender_Dashboard_njq0pe.jpg
@@ -702,6 +713,7 @@ scenarios:
               variety of coffee beans grown with great care for the environment
               and local communities. Check our post or contact us directly for
               current availability.
+        logo: https://res.cloudinary.com/papu/image/upload/v1618827131/icrisat/1PSDSAdmin/PSDS_Admin_h2rcrg
 slider:
   - img: https://res.cloudinary.com/papu/image/upload/v1618134269/6Bidding/4Bidder-Enrollemnet/Bidder_Enrollment_2_gk51fg.jpg
     name: Slider 1
