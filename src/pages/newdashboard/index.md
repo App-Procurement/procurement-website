@@ -91,6 +91,7 @@ scenarios:
               variety of coffee beans grown with great care for the environment
               and local communities. Check our post or contact us directly for
               current availability.
+        logo: https://res.cloudinary.com/papu/image/upload/v1618827131/icrisat/1PSDSAdmin/PSDS_Admin_h2rcrg
       - img: https://res.cloudinary.com/papu/image/upload/v1618826808/icrisat/1PSDSAdmin/2Purchase-Order/1RFP_janjms.jpg
         name: Request For Proposal
         link: http://localhost:8888/newdashboard
@@ -182,6 +183,7 @@ scenarios:
               variety of coffee beans grown with great care for the environment
               and local communities. Check our post or contact us directly for
               current availability.
+        logo: https://res.cloudinary.com/papu/image/upload/v1618827131/icrisat/1PSDSAdmin/PSDS_Admin_h2rcrg
       - img: https://res.cloudinary.com/papu/image/upload/v1618826810/icrisat/1PSDSAdmin/3Invoce-Contact/1Invoices_lwhnkl.jpg
         name: Invoice & Contacts
         link: http://localhost:8888/newdashboard
@@ -222,6 +224,7 @@ scenarios:
             name: Vendor Enroll
             text: We sell green and roasted coffee beans that are sourced directly from
               independent farmers and farm cooperatives.
+        logo: https://res.cloudinary.com/papu/image/upload/v1618827131/icrisat/1PSDSAdmin/PSDS_Admin_h2rcrg
   - img: https://res.cloudinary.com/papu/image/upload/v1618828004/icrisat/2General-Director/Director_General_cbam6k.svg
     name: Director General
     subItems:
@@ -341,6 +344,7 @@ scenarios:
               variety of coffee beans grown with great care for the environment
               and local communities. Check our post or contact us directly for
               current availability.
+        logo: https://res.cloudinary.com/papu/image/upload/v1618827131/icrisat/1PSDSAdmin/PSDS_Admin_h2rcrg
       - img: https://res.cloudinary.com/papu/image/upload/v1618826865/icrisat/2General-Director/1Director-Portal/7RFP_izt22w.jpg
         name: Request For Proposal
         link: http://localhost:8888/newdashboard
@@ -361,6 +365,7 @@ scenarios:
               and local communities. Check our post or contact us directly for
               current availability.
             name: Send Request For Proposal
+        logo: https://res.cloudinary.com/papu/image/upload/v1618827131/icrisat/1PSDSAdmin/PSDS_Admin_h2rcrg
       - img: https://res.cloudinary.com/papu/image/upload/v1618826865/icrisat/2General-Director/1Director-Portal/9Approve_P_O_wjqxga.jpg
         name: Purchase Order
         link: http://localhost:8888/newdashboard
@@ -381,6 +386,7 @@ scenarios:
               variety of coffee beans grown with great care for the environment
               and local communities. Check our post or contact us directly for
               current availability.
+        logo: https://res.cloudinary.com/papu/image/upload/v1618827131/icrisat/1PSDSAdmin/PSDS_Admin_h2rcrg
   - img: https://res.cloudinary.com/papu/image/upload/v1618830793/icrisat/3Buyer/Buyer_eotxzx.svg
     name: Buyer
     subItems:
@@ -445,6 +451,7 @@ scenarios:
               variety of coffee beans grown with great care for the environment
               and local communities. Check our post or contact us directly for
               current availability.
+        logo: https://res.cloudinary.com/papu/image/upload/v1618827131/icrisat/1PSDSAdmin/PSDS_Admin_h2rcrg
       - img: https://res.cloudinary.com/papu/image/upload/v1618826911/icrisat/3Buyer/Quotation-PO-Generate/1Vendor_Quotatons_cnr6jv.jpg
         name: Generate Purchase Order
         link: http://localhost:8888/newdashboard
@@ -484,6 +491,7 @@ scenarios:
               independent farmers and farm cooperatives. We’re proud to offer a
               variety of coffee beans grown with great care for the environment
               and local communities. Check
+        logo: https://res.cloudinary.com/papu/image/upload/v1618827131/icrisat/1PSDSAdmin/PSDS_Admin_h2rcrg
   - img: https://res.cloudinary.com/papu/image/upload/v1618831033/icrisat/4Requestor/Requisitioner_gdqhmt.svg
     name: Requisitioner
     subItems:
@@ -521,6 +529,7 @@ scenarios:
               variety of coffee beans grown with great care for the environment
               and local communities. Check our post or contact us directly for
               current availability.
+        logo: https://res.cloudinary.com/papu/image/upload/v1618827131/icrisat/1PSDSAdmin/PSDS_Admin_h2rcrg
   - img: https://res.cloudinary.com/papu/image/upload/v1618832633/icrisat/5Vendor-portal/Vendor_grre9u.svg
     name: Vendor
     subItems:
@@ -591,6 +600,7 @@ scenarios:
               variety of coffee beans grown with great care for the environment
               and local communities. Check our post or contact us directly for
               current availability.
+        logo: https://res.cloudinary.com/papu/image/upload/v1618827131/icrisat/1PSDSAdmin/PSDS_Admin_h2rcrg
       - img: https://res.cloudinary.com/papu/image/upload/v1618827009/icrisat/5Vendor-portal/2Clarification/1Clarification_nkjcwc.jpg
         name: Clarification
         link: http://localhost:8888/newdashboard
@@ -631,6 +641,7 @@ scenarios:
               variety of coffee beans grown with great care for the environment
               and local communities. Check our post or contact us directly for
               current availability.
+        logo: https://res.cloudinary.com/papu/image/upload/v1618827131/icrisat/1PSDSAdmin/PSDS_Admin_h2rcrg
   - img: https://res.cloudinary.com/papu/image/upload/v1618832657/icrisat/6Bidding/Bidding_kc40mh.svg
     name: "Bidder "
     subItems:
@@ -702,6 +713,7 @@ scenarios:
               variety of coffee beans grown with great care for the environment
               and local communities. Check our post or contact us directly for
               current availability.
+        logo: https://res.cloudinary.com/papu/image/upload/v1618827131/icrisat/1PSDSAdmin/PSDS_Admin_h2rcrg
 slider:
   - img: https://res.cloudinary.com/papu/image/upload/v1618134269/6Bidding/4Bidder-Enrollemnet/Bidder_Enrollment_2_gk51fg.jpg
     name: Slider 1
