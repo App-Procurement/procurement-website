@@ -117,8 +117,8 @@ export const NewDashboardTemplate = ({ scenarios, slider }) => {
 														/>
 													</div>
 													<div className="product-links">
-														<div className="name"><Link to={item.link}>Link</Link></div>
-														<div className="name"> <Link to={item.screenshots}>screenshots</Link></div>
+														<div className="name"><a target="_blank" href={item.link}>Link</a></div>
+														<div className="name"> <a target="_blank" href={item.screenshots}>screenshots</a></div>
 													</div>
 												</div>
 											</div>
